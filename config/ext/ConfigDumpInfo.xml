@@ -385,7 +385,7 @@
 		<Metadata name="Document.РС_Занятость.Template.СКД_ПравилаОтбораСобытий.Template" id="34adee58-4135-464c-be8f-d5b11c63fd54.0" configVersion="afc2f87e2ae48043ddd4a373e351f83295dc3ac3"/>
 		<Metadata name="Document.РС_ОтчетКлиенту" id="e8d62e88-3165-440d-96a2-62d0cba92694" configVersion="57df838953db83008d5df2572f0ff5d2611ad4cc"/>
 		<Metadata name="Document.РС_ОтчетКлиенту.Form.ФормаДокумента" id="10f8f2f9-1070-428c-9fab-b544857de5c8" configVersion="8f3de6070376bc77cee04730c24e29f310f937f3"/>
-		<Metadata name="Document.РС_ОтчетКлиенту.Form.ФормаДокумента.Form" id="10f8f2f9-1070-428c-9fab-b544857de5c8.0" configVersion="151b4665807522738aacc490d6eda687391c19c3"/>
+		<Metadata name="Document.РС_ОтчетКлиенту.Form.ФормаДокумента.Form" id="10f8f2f9-1070-428c-9fab-b544857de5c8.0" configVersion="0149681e7af3d9b2d195dcdd3e8048565feee336"/>
 		<Metadata name="Document.РС_ОтчетКлиенту.ManagerModule" id="e8d62e88-3165-440d-96a2-62d0cba92694.2" configVersion="2d621d2b3ff6d5a1ecc96d39f468c23f569c7eef"/>
 		<Metadata name="Document.СоглашениеSLA" id="92012451-ad71-4f56-9c79-9d68e52938a1" configVersion="c49360bc1ff8c416c21699061ec078c02b71f87e"/>
 		<Metadata name="Document.ТелефонныйЗвонок" id="0835f5a8-d5db-4cf3-b4b9-6b97d1cf0f0c" configVersion="10f093ccf6121e195b8527abd7412e0998b696fd">
