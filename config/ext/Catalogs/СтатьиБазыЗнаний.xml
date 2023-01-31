@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Catalog uuid="ca088635-4df7-425a-8f58-0b1ec6390eac">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.СтатьиБазыЗнаний" category="Object">
+				<xr:TypeId>bc79b8cf-8fcc-4542-b540-eedcca32d446</xr:TypeId>
+				<xr:ValueId>ca29bf4b-c3b1-4a9b-8cf0-fd1184c0f7bd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.СтатьиБазыЗнаний" category="Ref">
+				<xr:TypeId>e7b69215-cee5-412d-aa55-0a3290d03393</xr:TypeId>
+				<xr:ValueId>933942b1-26ae-41d7-a17e-65f49478c4fa</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.СтатьиБазыЗнаний" category="Selection">
+				<xr:TypeId>daf7d68c-09cd-42b5-afe4-652c213a5b96</xr:TypeId>
+				<xr:ValueId>4012f9f5-a248-4939-bc3a-c3ac97449738</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.СтатьиБазыЗнаний" category="List">
+				<xr:TypeId>29a7ba4d-52c5-4a6a-99e1-cb3adc922ef8</xr:TypeId>
+				<xr:ValueId>f12f883c-3325-448e-a9ed-f1403a9b3835</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.СтатьиБазыЗнаний" category="Manager">
+				<xr:TypeId>4f93baae-727a-401b-8cd3-2d2a55356b8b</xr:TypeId>
+				<xr:ValueId>1438662e-ba95-4768-8889-c52a62fbf2c6</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СтатьиБазыЗнаний</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>c0ffacb2-9502-4318-9eab-e1ea2a6559b3</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

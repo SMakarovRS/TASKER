@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Catalog uuid="84df8a1a-6c3d-4720-8868-86ff25ced1cb">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.КатегорииЗаданий" category="Object">
+				<xr:TypeId>1a79608e-ac41-4a7a-b66c-a10cde4a90b7</xr:TypeId>
+				<xr:ValueId>2ffb6587-93ca-439b-8fed-0933af048eaa</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.КатегорииЗаданий" category="Ref">
+				<xr:TypeId>9c400f81-075b-4915-aa6b-9311d508c087</xr:TypeId>
+				<xr:ValueId>7881501e-a788-4f3b-b0c2-3eeebad3c465</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.КатегорииЗаданий" category="Selection">
+				<xr:TypeId>29c7066e-5ac5-46fa-8f28-6a07fdbbc486</xr:TypeId>
+				<xr:ValueId>7a05c4b1-d1cc-4564-b23e-cbd402ad3fb8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.КатегорииЗаданий" category="List">
+				<xr:TypeId>8ad13762-5bcb-4752-b51a-6c22f3b97be2</xr:TypeId>
+				<xr:ValueId>199a51c1-e571-4912-9a41-c598f7358e93</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.КатегорииЗаданий" category="Manager">
+				<xr:TypeId>bd205693-23c6-419f-a78f-e31ad1d361a9</xr:TypeId>
+				<xr:ValueId>21fed309-75be-4625-85d3-40eddff18779</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>КатегорииЗаданий</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>9d8fd61c-c04a-4d52-9490-7ba1fd9d75a9</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

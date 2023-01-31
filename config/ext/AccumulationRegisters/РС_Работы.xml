@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<AccumulationRegister uuid="97b18768-6cf0-4aee-9be7-be71ef86aa4f">
+		<InternalInfo>
+			<xr:GeneratedType name="AccumulationRegisterRecord.РС_Работы" category="Record">
+				<xr:TypeId>f02b1106-36cc-4827-abbf-6360f5b6f5da</xr:TypeId>
+				<xr:ValueId>4ec88b43-172a-43c2-863d-d0cabb393fb7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterManager.РС_Работы" category="Manager">
+				<xr:TypeId>4c997c33-6296-461b-8659-ef49d3647b82</xr:TypeId>
+				<xr:ValueId>b09b8c6e-eb6c-4866-910f-0147994bc7d7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterSelection.РС_Работы" category="Selection">
+				<xr:TypeId>1baab064-b4e0-4dbe-adc0-41c81473bd9d</xr:TypeId>
+				<xr:ValueId>00e9b2f9-1ab2-40b3-b18b-04b8605bdaf9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterList.РС_Работы" category="List">
+				<xr:TypeId>59e17948-d011-47be-b78b-7feaa6f9cbe8</xr:TypeId>
+				<xr:ValueId>ff7e0fa2-4467-426d-9c52-71e1cfe408ce</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterRecordSet.РС_Работы" category="RecordSet">
+				<xr:TypeId>c53cebbd-e628-47b3-8b97-ac336fd4d602</xr:TypeId>
+				<xr:ValueId>29d9ee20-a081-418a-b017-208c5733c5c0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterRecordKey.РС_Работы" category="RecordKey">
+				<xr:TypeId>1595b7ff-f629-4623-b144-d33a68dde145</xr:TypeId>
+				<xr:ValueId>35562c51-a42d-49cc-9e3c-708bff444ae2</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>РС_Работы</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>f3abcd5b-0516-4b98-ad2b-ccc729c50a25</ExtendedConfigurationObject>
+			<RegisterType>Balance</RegisterType>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="f4c3607c-aeaa-4891-8fe2-720bc4a74bde">
+				<InternalInfo/>
+				<Properties>
+					<Name>ФактическоеВремя</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>0711ac10-2b74-47d1-98e0-7a272f4352be</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="b4333872-94eb-42c2-ba46-0f538c6634bb">
+				<InternalInfo/>
+				<Properties>
+					<Name>ВремяКлиента</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>fa612297-23d9-4901-b97d-bf4670b71b19</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Dimension uuid="71be755b-7c53-433c-82b9-09e8cef7429b">
+				<InternalInfo/>
+				<Properties>
+					<Name>Занятость</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>58089527-f1c8-4943-a529-5c0f9e8c6d7c</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:DocumentRef.РС_Занятость</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</AccumulationRegister>
+</MetaDataObject>

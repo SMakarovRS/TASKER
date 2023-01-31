@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Enum uuid="b5e8385d-00c2-4023-a814-bea24beda183">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СостоянияЭтаповПроцесса" category="Ref">
+				<xr:TypeId>3d1469c5-eb5f-42d5-b9ca-a175aa8afc0f</xr:TypeId>
+				<xr:ValueId>54c92e4d-e704-4384-8da9-c6b7d07c36d2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СостоянияЭтаповПроцесса" category="Manager">
+				<xr:TypeId>44adfead-c120-478a-8688-3c474a028c80</xr:TypeId>
+				<xr:ValueId>2d34d982-c763-42af-9397-e35c3e3946cc</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СостоянияЭтаповПроцесса" category="List">
+				<xr:TypeId>5896820f-7301-4d3b-b7a4-95de60a4c12b</xr:TypeId>
+				<xr:ValueId>7cf1913b-d2a3-4c11-90f4-dd4e0409fb50</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СостоянияЭтаповПроцесса</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>d0f383b2-6edf-4223-8d59-f1f88a221dc6</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="dbda0a0f-906d-4661-8f96-7a7c7cd5def9">
+				<InternalInfo/>
+				<Properties>
+					<Name>Закрыт</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>10e24354-c490-470d-97e6-08a9e0cb5073</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d771585b-3afb-475d-90cd-aec1dec57e77">
+				<InternalInfo/>
+				<Properties>
+					<Name>Новый</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>1bc2d3fc-286d-44b0-8ded-046ba91f8570</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="743469b0-d816-4096-a9ac-df6b2f41277a">
+				<InternalInfo/>
+				<Properties>
+					<Name>Подготовка</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>c42581e9-30f1-41c4-bc9f-dfe036fe3af7</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="3d195dc8-f864-4cf5-a335-1638daafca5f">
+				<InternalInfo/>
+				<Properties>
+					<Name>Бэклог</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>6356507c-1924-4aae-b5ce-684adf8f7ccf</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="8c737ed9-4e8d-4f8d-9bef-05bcacf38d3e">
+				<InternalInfo/>
+				<Properties>
+					<Name>ВРаботе</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>6dc76534-b641-461a-a797-8d38afe9069f</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="50ec56de-b146-4037-8955-1c93079c65bf">
+				<InternalInfo/>
+				<Properties>
+					<Name>Выполнен</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>fb457320-ebd1-42aa-bb92-b8868ffae7f0</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="83fca4ab-de14-44fc-9287-09b7c51770fe">
+				<InternalInfo/>
+				<Properties>
+					<Name>Подпроцесс</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>a89ed21d-e4b8-4992-b29b-ea1c2f279a58</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="0143a930-30d4-4d00-aea3-d8b71d2e3b6b">
+				<InternalInfo/>
+				<Properties>
+					<Name>Приостановка</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>0a380811-69a7-4c11-a5d5-bc93aebc3bc9</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

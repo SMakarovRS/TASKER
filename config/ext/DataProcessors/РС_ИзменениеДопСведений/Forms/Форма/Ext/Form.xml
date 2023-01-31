@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Свойство" id="25">
+			<DataPath>Свойство</DataPath>
+			<ClearButton>true</ClearButton>
+			<ContextMenu name="СвойствоКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="СвойствоРасширеннаяПодсказка" id="27"/>
+			<Events>
+				<Event name="OnChange">СвойствоПриИзменении</Event>
+			</Events>
+		</InputField>
+		<Table name="ДополнительныеСведения" id="1">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ДополнительныеСведения</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ДополнительныеСведенияКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ДополнительныеСведенияКоманднаяПанель" id="3">
+				<ChildItems>
+					<Button name="ДополнительныеСведенияОбновитьСписок" id="23">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОбновитьСписок</CommandName>
+						<ExtendedTooltip name="ДополнительныеСведенияОбновитьСписокРасширеннаяПодсказка" id="24"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ДополнительныеСведенияРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ДополнительныеСведенияСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>ДополнительныеСведения</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДополнительныеСведенияСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ДополнительныеСведенияСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДополнительныеСведенияСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>ДополнительныеСведения</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДополнительныеСведенияСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ДополнительныеСведенияСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДополнительныеСведенияУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>ДополнительныеСведения</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДополнительныеСведенияУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ДополнительныеСведенияУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeDeleteRow">ДополнительныеСведенияПередУдалением</Event>
+				<Event name="OnChange">ДополнительныеСведенияПриИзменении</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="ДополнительныеСведенияОбъект" id="17">
+					<DataPath>ДополнительныеСведения.Объект</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДополнительныеСведенияОбъектКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ДополнительныеСведенияОбъектРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="ДополнительныеСведенияСвойство" id="14">
+					<DataPath>ДополнительныеСведения.Свойство</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДополнительныеСведенияСвойствоКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ДополнительныеСведенияСвойствоРасширеннаяПодсказка" id="16"/>
+					<Events>
+						<Event name="ChoiceProcessing">ДополнительныеСведенияСвойствоОбработкаВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="ДополнительныеСведенияЗначение" id="20">
+					<DataPath>ДополнительныеСведения.Значение</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДополнительныеСведенияЗначениеКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ДополнительныеСведенияЗначениеРасширеннаяПодсказка" id="22"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РС_ИзменениеДопСведений</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ДополнительныеСведения" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительные сведения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Свойство" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Свойство</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Объект" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объект</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
+						<v8:TypeSet>cfg:ChartOfCharacteristicTypesRef</v8:TypeSet>
+						<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="Значение" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:Characteristic.ДополнительныеРеквизитыИСведения</v8:TypeSet>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Свойство" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свойство</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОбновитьСписок" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить список</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить список</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+		</Command>
+	</Commands>
+</Form>

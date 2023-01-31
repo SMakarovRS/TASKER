@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Document uuid="92012451-ad71-4f56-9c79-9d68e52938a1">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.СоглашениеSLA" category="Object">
+				<xr:TypeId>635ee918-3f85-4ea2-8ace-22865354981d</xr:TypeId>
+				<xr:ValueId>04248527-e377-4060-b52f-214868f28d58</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.СоглашениеSLA" category="Ref">
+				<xr:TypeId>d95f469d-7495-4fac-b8ac-9c0bc5adf471</xr:TypeId>
+				<xr:ValueId>874e8734-d7c5-4daf-9941-11fc94fd175f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.СоглашениеSLA" category="Selection">
+				<xr:TypeId>e44778b6-009a-442e-b22e-af52f72bc5e3</xr:TypeId>
+				<xr:ValueId>9f2f5c81-6311-41e7-a598-f192796e4738</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.СоглашениеSLA" category="List">
+				<xr:TypeId>cfe97e40-b5e4-483e-bb73-9ad3fba820ca</xr:TypeId>
+				<xr:ValueId>ff952c51-a6dd-4a64-bf6a-b437b564ef36</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.СоглашениеSLA" category="Manager">
+				<xr:TypeId>4f528333-5997-44e6-8bb3-eb220d767601</xr:TypeId>
+				<xr:ValueId>3316d00e-29af-480d-a207-dc2a81b47d90</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СоглашениеSLA</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>d211e7f5-4209-43cb-814b-53a463836748</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects/>
+	</Document>
+</MetaDataObject>

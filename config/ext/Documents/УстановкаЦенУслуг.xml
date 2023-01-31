@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Document uuid="5fbb2234-92e6-41eb-92a5-f9569ad50041">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.УстановкаЦенУслуг" category="Object">
+				<xr:TypeId>f37d464c-5863-48cc-98aa-a8d4222368f4</xr:TypeId>
+				<xr:ValueId>79e32ac7-0894-418d-aca1-a82b37394138</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.УстановкаЦенУслуг" category="Ref">
+				<xr:TypeId>57575a6e-784c-4fce-ba80-64211b29680b</xr:TypeId>
+				<xr:ValueId>738e0c04-ecd2-4325-85bd-37106684a181</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.УстановкаЦенУслуг" category="Selection">
+				<xr:TypeId>009e9d0a-32db-4015-9737-dcf63b197dae</xr:TypeId>
+				<xr:ValueId>0a38fad8-a92f-4672-960a-cce3bd054c74</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.УстановкаЦенУслуг" category="List">
+				<xr:TypeId>1750f5de-b071-468c-8bcb-6384d136b571</xr:TypeId>
+				<xr:ValueId>a3cc2242-eb95-42b4-8d03-8440c2a25f5a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.УстановкаЦенУслуг" category="Manager">
+				<xr:TypeId>240acbe3-fa1d-433e-a801-56aa20204604</xr:TypeId>
+				<xr:ValueId>491bcb83-3daf-4733-8c3c-c93ff3e390d5</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>УстановкаЦенУслуг</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>95bf5a92-95df-451f-9200-71e72c7a2a03</ExtendedConfigurationObject>
+			<NumberType>String</NumberType>
+			<NumberLength>11</NumberLength>
+			<NumberAllowedLength>Variable</NumberAllowedLength>
+			<RegisterRecords>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РСК_ЦеныУслугКонтрагентов</xr:Item>
+			</RegisterRecords>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="aa841954-bd0a-4ad6-8706-2070268b98ad">
+				<Properties>
+					<Name>Контрагент</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контрагент</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="a1ddb01d-6904-4305-a125-5bd2eef4e947">
+				<InternalInfo/>
+				<Properties>
+					<Name>Тариф</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>b6f655dc-c70e-4905-a4d9-bbb7f8b62a11</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Тарифы</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="d4314856-dc32-47d2-9619-abfa383980dc">
+				<InternalInfo/>
+				<Properties>
+					<Name>Комментарий</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>0373fea9-a9a7-4e08-a361-b23630d95733</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Form>ФормаДокумента</Form>
+			<TabularSection uuid="69593528-2a51-4cf4-8155-ad99018340be">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.УстановкаЦенУслуг.Услуги" category="TabularSection">
+						<xr:TypeId>0eb8339a-9e28-431b-b9f8-c619a55a0d03</xr:TypeId>
+						<xr:ValueId>0eec7933-6c05-49be-a0d4-02f0146f9ca9</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.УстановкаЦенУслуг.Услуги" category="TabularSectionRow">
+						<xr:TypeId>a8070822-381b-4d93-a7d8-fdc895e816f5</xr:TypeId>
+						<xr:ValueId>b05c7dc3-9f22-4804-ad8f-b2e88fcb5b37</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<Name>Услуги</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>15d75a03-52c1-4d56-84b7-a7310048fcc2</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="2e577261-50a5-42ec-9162-37cb253ca5c3">
+						<InternalInfo/>
+						<Properties>
+							<Name>Цена</Name>
+							<Comment/>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<ExtendedConfigurationObject>6256a662-4f3d-4cac-b182-db714829e087</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>15</v8:Digits>
+									<v8:FractionDigits>2</v8:FractionDigits>
+									<v8:AllowedSign>Any</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="6fbf0b03-1665-4d02-b392-4246a62c9a6b">
+						<InternalInfo/>
+						<Properties>
+							<Name>Сервис</Name>
+							<Comment/>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<ExtendedConfigurationObject>8a105a2b-59e1-4452-b1fe-6e2606bcdb80</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:CatalogRef.Сервисы</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="cb23a1b1-68cc-4134-8d03-ae2488f2cc55">
+						<InternalInfo/>
+						<Properties>
+							<Name>Услуга</Name>
+							<Comment/>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<ExtendedConfigurationObject>ebca7fb7-4d83-4f3d-91a8-6c9611f889f3</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:CatalogRef.Услуги</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="965977b9-3af6-46d8-9f89-8d46f5a80ee3">
+						<InternalInfo/>
+						<Properties>
+							<Name>Валюта</Name>
+							<Comment/>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<ExtendedConfigurationObject>3978d9e0-10be-4bb1-b46e-76ee99f6f44d</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

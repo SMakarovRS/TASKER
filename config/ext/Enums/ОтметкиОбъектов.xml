@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Enum uuid="0881a513-0fb8-415a-b19d-8e4906fc93f4">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ОтметкиОбъектов" category="Ref">
+				<xr:TypeId>561066ac-e185-4dfd-80c9-c494cfecc71f</xr:TypeId>
+				<xr:ValueId>5c42018a-c136-4138-b5d1-4d36adac5ef1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ОтметкиОбъектов" category="Manager">
+				<xr:TypeId>fa4f802f-7177-4720-9c3f-3b46b71f32c5</xr:TypeId>
+				<xr:ValueId>51fdb327-ce88-4adf-b4cf-512d89b0092c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ОтметкиОбъектов" category="List">
+				<xr:TypeId>b61ccd2f-2a59-4516-be75-59689b0114f6</xr:TypeId>
+				<xr:ValueId>e42e3c63-7010-4fc9-923b-615237c2856b</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ОтметкиОбъектов</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>9bb71e53-96f6-40c6-a6fb-f2701cbaf934</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="bc00f322-4a9c-4158-94cc-abb873b75caf">
+				<InternalInfo/>
+				<Properties>
+					<Name>Черная</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>7af8e06d-7829-4f0d-8fe9-bedf200e8ecf</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="6d0c594a-bbc9-499b-beb8-fe7d9a5cafc6">
+				<InternalInfo/>
+				<Properties>
+					<Name>Синяя</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>1d5b52c1-39df-4b4e-a107-b191daff0d58</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="1e33ef54-bdc7-4060-b516-43cefb97c0a5">
+				<InternalInfo/>
+				<Properties>
+					<Name>Зеленая</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>5c65f473-250a-4871-88eb-43d89ca92ffd</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f63addb8-a619-4656-ad05-64fdb8131053">
+				<InternalInfo/>
+				<Properties>
+					<Name>Красная</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>42a9cc86-47aa-4bc6-8671-09bcc906c749</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="4cbb0514-48e4-4d96-b290-685d8098da0b">
+				<InternalInfo/>
+				<Properties>
+					<Name>Желтая</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>76a68410-1899-4959-86fc-118c9175fb75</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

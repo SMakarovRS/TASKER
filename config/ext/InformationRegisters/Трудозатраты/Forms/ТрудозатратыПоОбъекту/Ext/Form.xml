@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Table name="Список" id="38">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокКонтекстноеМеню" id="40"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="39">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="41"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="42">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="43"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="44"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="48">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="49"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="50"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="45">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="46"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="47"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="Описание" id="75">
+					<Width>45</Width>
+					<ContextMenu name="ОписаниеКонтекстноеМеню" id="76"/>
+					<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="77"/>
+				</InputField>
+				<InputField name="ВидРаботы" id="69">
+					<ContextMenu name="ВидРаботыКонтекстноеМеню" id="70"/>
+					<ExtendedTooltip name="ВидРаботыРасширеннаяПодсказка" id="71"/>
+				</InputField>
+				<InputField name="ДатаНачала" id="57">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начало</v8:content>
+						</v8:item>
+					</Title>
+					<Width>10</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ='dd.MM.yy HH:mm'</v8:content>
+						</v8:item>
+					</Format>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ='dd.MM.yy HH:mm'</v8:content>
+						</v8:item>
+					</EditFormat>
+					<ContextMenu name="ДатаНачалаКонтекстноеМеню" id="58"/>
+					<ExtendedTooltip name="ДатаНачалаРасширеннаяПодсказка" id="59"/>
+				</InputField>
+				<InputField name="ДатаОкончания" id="54">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Окончание</v8:content>
+						</v8:item>
+					</Title>
+					<Width>10</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ='dd.MM.yy HH:mm'</v8:content>
+						</v8:item>
+					</Format>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ='dd.MM.yy HH:mm'</v8:content>
+						</v8:item>
+					</EditFormat>
+					<ContextMenu name="ДатаОкончанияКонтекстноеМеню" id="55"/>
+					<ExtendedTooltip name="ДатаОкончанияРасширеннаяПодсказка" id="56"/>
+				</InputField>
+				<InputField name="Время" id="66">
+					<Width>10</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ВремяКонтекстноеМеню" id="67"/>
+					<ExtendedTooltip name="ВремяРасширеннаяПодсказка" id="68"/>
+				</InputField>
+				<InputField name="Объект" id="63">
+					<ContextMenu name="ОбъектКонтекстноеМеню" id="64"/>
+					<ExtendedTooltip name="ОбъектРасширеннаяПодсказка" id="65"/>
+				</InputField>
+				<InputField name="Инициатор" id="60">
+					<ContextMenu name="ИнициаторКонтекстноеМеню" id="61"/>
+					<ExtendedTooltip name="ИнициаторРасширеннаяПодсказка" id="62"/>
+				</InputField>
+				<InputField name="Исполнитель" id="72">
+					<ContextMenu name="ИсполнительКонтекстноеМеню" id="73"/>
+					<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="74"/>
+				</InputField>
+				<InputField name="Длительность" id="78">
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="ДлительностьКонтекстноеМеню" id="79"/>
+					<ExtendedTooltip name="ДлительностьРасширеннаяПодсказка" id="80"/>
+				</InputField>
+				<LabelField name="КлючУникальности" id="51">
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="КлючУникальностиКонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="КлючУникальностиРасширеннаяПодсказка" id="53"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes/>
+	<BaseForm version="2.11">
+		<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+		<ChildItems>
+			<Table name="Список" id="38">
+				<AutoMaxWidth>false</AutoMaxWidth>
+				<AutoRefresh>false</AutoRefresh>
+				<AutoRefreshPeriod>60</AutoRefreshPeriod>
+				<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+				<RestoreCurrentRow>false</RestoreCurrentRow>
+				<ShowRoot>true</ShowRoot>
+				<AllowRootChoice>false</AllowRootChoice>
+				<UpdateOnDataChange>Auto</UpdateOnDataChange>
+				<ContextMenu name="СписокКонтекстноеМеню" id="40"/>
+				<AutoCommandBar name="СписокКоманднаяПанель" id="39">
+					<Autofill>false</Autofill>
+				</AutoCommandBar>
+				<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="41"/>
+				<SearchStringAddition name="СписокСтрокаПоиска" id="42">
+					<AdditionSource>
+						<Item>Список</Item>
+						<Type>SearchStringRepresentation</Type>
+					</AdditionSource>
+					<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="43"/>
+					<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="44"/>
+				</SearchStringAddition>
+				<ViewStatusAddition name="СписокСостояниеПросмотра" id="48">
+					<AdditionSource>
+						<Item>Список</Item>
+						<Type>ViewStatusRepresentation</Type>
+					</AdditionSource>
+					<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="49"/>
+					<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="50"/>
+				</ViewStatusAddition>
+				<SearchControlAddition name="СписокУправлениеПоиском" id="45">
+					<AdditionSource>
+						<Item>Список</Item>
+						<Type>SearchControl</Type>
+					</AdditionSource>
+					<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="46"/>
+					<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="47"/>
+				</SearchControlAddition>
+				<ChildItems>
+					<InputField name="Описание" id="75">
+						<Width>45</Width>
+						<ContextMenu name="ОписаниеКонтекстноеМеню" id="76"/>
+						<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="77"/>
+					</InputField>
+					<InputField name="ВидРаботы" id="69">
+						<ContextMenu name="ВидРаботыКонтекстноеМеню" id="70"/>
+						<ExtendedTooltip name="ВидРаботыРасширеннаяПодсказка" id="71"/>
+					</InputField>
+					<InputField name="ДатаНачала" id="57">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Начало</v8:content>
+							</v8:item>
+						</Title>
+						<Width>10</Width>
+						<AutoMaxWidth>false</AutoMaxWidth>
+						<HorizontalStretch>false</HorizontalStretch>
+						<Format>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ДФ='dd.MM.yy HH:mm'</v8:content>
+							</v8:item>
+						</Format>
+						<EditFormat>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ДФ='dd.MM.yy HH:mm'</v8:content>
+							</v8:item>
+						</EditFormat>
+						<ContextMenu name="ДатаНачалаКонтекстноеМеню" id="58"/>
+						<ExtendedTooltip name="ДатаНачалаРасширеннаяПодсказка" id="59"/>
+					</InputField>
+					<InputField name="ДатаОкончания" id="54">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Окончание</v8:content>
+							</v8:item>
+						</Title>
+						<Width>10</Width>
+						<AutoMaxWidth>false</AutoMaxWidth>
+						<HorizontalStretch>false</HorizontalStretch>
+						<Format>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ДФ='dd.MM.yy HH:mm'</v8:content>
+							</v8:item>
+						</Format>
+						<EditFormat>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ДФ='dd.MM.yy HH:mm'</v8:content>
+							</v8:item>
+						</EditFormat>
+						<ContextMenu name="ДатаОкончанияКонтекстноеМеню" id="55"/>
+						<ExtendedTooltip name="ДатаОкончанияРасширеннаяПодсказка" id="56"/>
+					</InputField>
+					<InputField name="Время" id="66">
+						<Width>10</Width>
+						<AutoMaxWidth>false</AutoMaxWidth>
+						<HorizontalStretch>false</HorizontalStretch>
+						<ContextMenu name="ВремяКонтекстноеМеню" id="67"/>
+						<ExtendedTooltip name="ВремяРасширеннаяПодсказка" id="68"/>
+					</InputField>
+					<InputField name="Объект" id="63">
+						<ContextMenu name="ОбъектКонтекстноеМеню" id="64"/>
+						<ExtendedTooltip name="ОбъектРасширеннаяПодсказка" id="65"/>
+					</InputField>
+					<InputField name="Инициатор" id="60">
+						<ContextMenu name="ИнициаторКонтекстноеМеню" id="61"/>
+						<ExtendedTooltip name="ИнициаторРасширеннаяПодсказка" id="62"/>
+					</InputField>
+					<InputField name="Исполнитель" id="72">
+						<ContextMenu name="ИсполнительКонтекстноеМеню" id="73"/>
+						<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="74"/>
+					</InputField>
+					<InputField name="Длительность" id="78">
+						<UserVisible>
+							<xr:Common>false</xr:Common>
+						</UserVisible>
+						<ContextMenu name="ДлительностьКонтекстноеМеню" id="79"/>
+						<ExtendedTooltip name="ДлительностьРасширеннаяПодсказка" id="80"/>
+					</InputField>
+					<LabelField name="КлючУникальности" id="51">
+						<UserVisible>
+							<xr:Common>false</xr:Common>
+						</UserVisible>
+						<ContextMenu name="КлючУникальностиКонтекстноеМеню" id="52"/>
+						<ExtendedTooltip name="КлючУникальностиРасширеннаяПодсказка" id="53"/>
+					</LabelField>
+				</ChildItems>
+			</Table>
+		</ChildItems>
+		<Attributes/>
+	</BaseForm>
+</Form>

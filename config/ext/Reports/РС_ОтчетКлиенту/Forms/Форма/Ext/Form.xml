@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<CommandBarLocation>None</CommandBarLocation>
+	<ReportFormType>Main</ReportFormType>
+	<AutoShowState>Auto</AutoShowState>
+	<ReportResultViewMode>Auto</ReportResultViewMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаЛевоПраво" id="1">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа лево право</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаЛевоПравоРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаЛево" id="3">
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа лево</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаЛевоРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<CheckBoxField name="ПолеВыводитьФакт" id="5">
+							<DataPath>ВыводитьФакт</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПолеВыводитьФактКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="ПолеВыводитьФактРасширеннаяПодсказка" id="7"/>
+						</CheckBoxField>
+						<CheckBoxField name="ПолеВыводитьПлатное" id="8">
+							<DataPath>ВыводитьПлатное</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПолеВыводитьПлатноеКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="ПолеВыводитьПлатноеРасширеннаяПодсказка" id="10"/>
+						</CheckBoxField>
+						<CheckBoxField name="ПолеВыводитьБесплатное" id="11">
+							<DataPath>ВыводитьБесплатное</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПолеВыводитьБесплатноеКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="ПолеВыводитьБесплатноеРасширеннаяПодсказка" id="13"/>
+						</CheckBoxField>
+						<CheckBoxField name="ВыводитьИсполнителя" id="14">
+							<DataPath>ВыводитьИсполнителя</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВыводитьИсполнителяКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="ВыводитьИсполнителяРасширеннаяПодсказка" id="16"/>
+						</CheckBoxField>
+						<CheckBoxField name="ВыводитьЗанятости" id="17">
+							<DataPath>ВыводитьЗанятости</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВыводитьЗанятостиКонтекстноеМеню" id="18"/>
+							<ExtendedTooltip name="ВыводитьЗанятостиРасширеннаяПодсказка" id="19"/>
+						</CheckBoxField>
+						<CheckBoxField name="ВыводитьОписание" id="20">
+							<DataPath>ВыводитьОписание</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВыводитьОписаниеКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="ВыводитьОписаниеРасширеннаяПодсказка" id="22"/>
+						</CheckBoxField>
+						<CheckBoxField name="ПоМесяцам" id="23">
+							<DataPath>ПоМесяцам</DataPath>
+							<Enabled>false</Enabled>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПоМесяцамКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="ПоМесяцамРасширеннаяПодсказка" id="25"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПраво" id="26">
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа право</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаПравоРасширеннаяПодсказка" id="27"/>
+					<ChildItems>
+						<SpreadSheetDocumentField name="ТабДок" id="28">
+							<DataPath>ТабДок</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="ТабДокКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="ТабДокРасширеннаяПодсказка" id="30"/>
+						</SpreadSheetDocumentField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаКоманд" id="31">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа команд</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаКомандРасширеннаяПодсказка" id="32"/>
+			<ChildItems>
+				<Button name="Печать" id="33">
+					<Type>UsualButton</Type>
+					<CommandName>Form.StandardCommand.Close</CommandName>
+					<BackColor>#FFE100</BackColor>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Печать</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ПечатьРасширеннаяПодсказка" id="34"/>
+				</Button>
+				<Button name="Сформировать" id="35">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.Command.Сформировать</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обновить</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СформироватьРасширеннаяПодсказка" id="36"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Отчет" id="1">
+			<Type>
+				<v8:Type>cfg:ReportObject.РС_ОтчетКлиенту</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ВыводитьЗанятости" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выводить занятости</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВыводитьБесплатное" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выводить бесплатное время</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВыводитьИсполнителя" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выводить исполнителя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВыводитьОписание" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выводить описание</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВыводитьПлатное" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выводить платное время</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВыводитьФакт" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выводить фактическое время</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Документ" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.РС_ОтчетКлиенту</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяФайла" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя файла</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоМесяцам" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>По месяцам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТабДок" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таб док</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Сформировать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Сформировать</Action>
+		</Command>
+	</Commands>
+</Form>

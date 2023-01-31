@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Catalog uuid="58f0503a-ccaf-42d1-9e15-4425c6376650">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.РС_Переменные" category="Object">
+				<xr:TypeId>c256f2f9-c7f1-47c6-b6d5-f7e2123d411d</xr:TypeId>
+				<xr:ValueId>a68cf885-616e-4d27-b22b-03c151abe0e9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.РС_Переменные" category="Ref">
+				<xr:TypeId>c4d3dbcd-59fc-4a76-a662-1276f24e7f16</xr:TypeId>
+				<xr:ValueId>a905ff7a-ca35-4d7a-a808-c3c2db5cbb90</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.РС_Переменные" category="Selection">
+				<xr:TypeId>8ca238f0-2b63-4a16-bc2b-ad00675a505a</xr:TypeId>
+				<xr:ValueId>5dc07eeb-4ecd-4f0a-a84b-59919087a7d5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.РС_Переменные" category="List">
+				<xr:TypeId>489cfe70-706b-4b20-9b5a-76dd52e8f85e</xr:TypeId>
+				<xr:ValueId>08c66a0e-69b2-4679-b633-1169af7bd986</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.РС_Переменные" category="Manager">
+				<xr:TypeId>b67f46d6-ccf9-42d6-8e9e-2d30d5f2a0ee</xr:TypeId>
+				<xr:ValueId>f8030590-f0ed-468a-9337-267b43a849a0</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>РС_Переменные</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>510ab577-242c-42fb-a558-c91570410813</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Catalog uuid="7fdaa532-366d-40f9-8d58-2815659a2314">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ЭтапыПроцессов" category="Object">
+				<xr:TypeId>bd958714-ea28-4829-8c90-5cfe8ad5a2b6</xr:TypeId>
+				<xr:ValueId>52264e32-7815-4023-ad30-1cd49849d4a7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ЭтапыПроцессов" category="Ref">
+				<xr:TypeId>d485c2eb-6fcd-43ea-80b3-362636710677</xr:TypeId>
+				<xr:ValueId>c5ada31f-232b-455b-b27d-d98dc92ad653</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ЭтапыПроцессов" category="Selection">
+				<xr:TypeId>c8cb377c-0424-4c02-9a52-c2d5db5e5360</xr:TypeId>
+				<xr:ValueId>129f010b-1468-4f7d-b0bc-285c3c654205</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ЭтапыПроцессов" category="List">
+				<xr:TypeId>417a0d4e-5da6-4a77-966a-b7aad686ea47</xr:TypeId>
+				<xr:ValueId>59268d48-0e47-4403-9eca-6258997bb9cb</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ЭтапыПроцессов" category="Manager">
+				<xr:TypeId>f814f50e-4e54-4ed5-89a4-951cc3e75176</xr:TypeId>
+				<xr:ValueId>8c2d1884-e647-4c52-9fa3-2f6fa91af164</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ЭтапыПроцессов</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>8e85965c-4e4c-4716-8ee5-a8c32b56a2c9</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="92d4d2a9-e898-4028-86b4-d9c71c93e0fe">
+				<InternalInfo/>
+				<Properties>
+					<Name>СостояниеЭтапа</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>3289f008-40a2-4459-b16d-db188e5804fc</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.СостоянияЭтаповПроцесса</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="8488a011-7a65-4abc-b40b-5fa655476f44">
+				<InternalInfo/>
+				<Properties>
+					<Name>НавСсылка</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>08e1ddb1-1260-4eee-9ee5-b52c4905b130</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>512</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

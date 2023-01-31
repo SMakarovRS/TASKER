@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Catalog uuid="a61988b6-1021-48b9-a0d5-f18f238fa81e">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.МетрикиZabbix" category="Object">
+				<xr:TypeId>312b61f0-3a9a-4a9e-9853-fe89a1142c1d</xr:TypeId>
+				<xr:ValueId>409e224c-d8a2-4967-865b-54a834cbdb82</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.МетрикиZabbix" category="Ref">
+				<xr:TypeId>43603baa-79d9-4e6f-a205-5b1821915e8c</xr:TypeId>
+				<xr:ValueId>fd5fd749-e3f7-4376-a04f-ef4d448b207b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.МетрикиZabbix" category="Selection">
+				<xr:TypeId>6b730bd4-03ff-4423-8acb-6c2bf464569e</xr:TypeId>
+				<xr:ValueId>e081dc19-5df2-4f49-b549-2129bfb76c2d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.МетрикиZabbix" category="List">
+				<xr:TypeId>55a2f0b6-fc50-4cd4-9e03-681e23a1734e</xr:TypeId>
+				<xr:ValueId>540ec3fb-fc30-483d-a5e8-e2b31a44d338</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.МетрикиZabbix" category="Manager">
+				<xr:TypeId>2decd687-1b43-433d-b7d2-51a9b07425f0</xr:TypeId>
+				<xr:ValueId>3ff5ef1a-c818-49c4-8ec3-ea5a4d425545</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>МетрикиZabbix</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>b9dc3896-85e0-42fb-b5db-b7af3e076b7c</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

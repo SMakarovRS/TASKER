@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Catalog uuid="c7bc1de0-db12-4a7e-a94b-45c7b2223eeb">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ВидыРабот" category="Object">
+				<xr:TypeId>fb690698-9a42-41a7-bed4-a55bfd21ddd1</xr:TypeId>
+				<xr:ValueId>2abe0d7c-e8c1-435c-9d5e-909110d4f79f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ВидыРабот" category="Ref">
+				<xr:TypeId>cfc2c812-db37-4357-9817-bc873fde0879</xr:TypeId>
+				<xr:ValueId>0fed2113-e5b8-408c-8727-3f67f4f50e10</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ВидыРабот" category="Selection">
+				<xr:TypeId>01498a5d-7a5e-4832-ad9c-cc29ff7cd940</xr:TypeId>
+				<xr:ValueId>139f641e-bb1a-4400-b08a-36c51a8b2f49</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ВидыРабот" category="List">
+				<xr:TypeId>d23a57f6-be33-4339-84c1-b2a7db86ca49</xr:TypeId>
+				<xr:ValueId>4bd274d4-110f-424f-9116-0577de6d5b86</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ВидыРабот" category="Manager">
+				<xr:TypeId>1ac55933-28df-4e79-8e8f-f0cdf5203a79</xr:TypeId>
+				<xr:ValueId>d7038247-021c-425c-a6cc-c5d5412b2603</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ВидыРабот</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>f8466355-276e-4422-8ba4-d8e8f633118b</ExtendedConfigurationObject>
+			<Hierarchical>true</Hierarchical>
+			<CodeLength>9</CodeLength>
+			<DescriptionLength>100</DescriptionLength>
+			<CodeType>String</CodeType>
+			<CodeAllowedLength>Variable</CodeAllowedLength>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="67201cc7-539e-4e23-b6f2-a80ad55443b3">
+				<InternalInfo/>
+				<Properties>
+					<Name>ВидВремени</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>7cf9a022-3220-4a55-9a5e-240fdc4dd025</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.ВидыВремени</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="8dbae7a9-5afa-4c8f-b419-5c18d9a80087">
+				<InternalInfo/>
+				<Properties>
+					<Name>РеквизитДопУпорядочивания</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>d2e7843a-7eca-4cab-894b-f8077383fed2</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>5</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Form>ФормаЭлемента</Form>
+			<Form>ФормаСписка</Form>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

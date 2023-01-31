@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<InformationRegister uuid="b9ba7ef0-cefe-4b9b-8463-7cb76eb0c212">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.ПредметыПапкиВзаимодействий" category="Record">
+				<xr:TypeId>d062e519-98f2-4616-b0d8-b4f459f4a3e8</xr:TypeId>
+				<xr:ValueId>f71c672b-7e42-4a5a-a3f5-607ed7a963ad</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.ПредметыПапкиВзаимодействий" category="Manager">
+				<xr:TypeId>26082c84-ef64-4003-a9b3-4cc7703ed79e</xr:TypeId>
+				<xr:ValueId>eef68dbd-3964-44cd-810a-becde3de73da</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.ПредметыПапкиВзаимодействий" category="Selection">
+				<xr:TypeId>03b56952-391d-4f22-baf0-4710c9ca7a25</xr:TypeId>
+				<xr:ValueId>c98b2ba3-3f54-48e9-81a8-9263d0801778</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.ПредметыПапкиВзаимодействий" category="List">
+				<xr:TypeId>a8f83751-df5f-4f7e-9ba6-f0f0854866fe</xr:TypeId>
+				<xr:ValueId>9fe7afad-c5a3-40a8-b2e4-7379afb96190</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.ПредметыПапкиВзаимодействий" category="RecordSet">
+				<xr:TypeId>44265ea9-558d-49de-901f-26405588625b</xr:TypeId>
+				<xr:ValueId>6b4a2657-0684-4503-b7c0-bc8f9c176f6f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.ПредметыПапкиВзаимодействий" category="RecordKey">
+				<xr:TypeId>ae9e9d6a-848d-424f-928c-5861e8ba2dba</xr:TypeId>
+				<xr:ValueId>83bcaae1-2ce3-43da-b28d-33eba6cc5ca0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.ПредметыПапкиВзаимодействий" category="RecordManager">
+				<xr:TypeId>92450d2c-f6dc-42ca-b48c-3956501b8e07</xr:TypeId>
+				<xr:ValueId>7cc69aa6-4451-4525-89f6-2aaa55ab33b3</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ПредметыПапкиВзаимодействий</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>617de19c-bf01-4900-832a-c169e9faeb79</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="d3173319-4193-458a-be02-c25f69111b61">
+				<InternalInfo/>
+				<Properties>
+					<Name>Предмет</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>70b73fd0-f5dc-411e-9bbb-10a538e8281b</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.ПредметВзаимодействия</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="9bc57679-b297-42f1-895b-2a18b4415bbc">
+				<InternalInfo/>
+				<Properties>
+					<Name>Рассмотрено</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>05ee4a7c-63e6-4587-8be7-e206345e3471</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="feab8e2f-4109-4c23-9b31-15e5e313ff0f">
+				<InternalInfo/>
+				<Properties>
+					<Name>РассмотретьПосле</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>98d5e98b-0382-4b28-a5d9-24392925664a</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Dimension uuid="f1dc5f89-9f72-4c65-99b4-30b3dac65bd8">
+				<InternalInfo/>
+				<Properties>
+					<Name>Взаимодействие</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>7c424a77-2a83-4a85-8b7d-e8bb6d013c77</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

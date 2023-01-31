@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Catalog uuid="ef945999-c32d-45ea-bd69-3a7fe59077f7">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.Теги" category="Object">
+				<xr:TypeId>c12bcdb9-bb62-4b56-98bf-66112226ac96</xr:TypeId>
+				<xr:ValueId>4307554d-e2e1-49d5-8100-c46cba8f83b3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.Теги" category="Ref">
+				<xr:TypeId>8b73b6e1-8579-4d7f-9224-c92db3499fa1</xr:TypeId>
+				<xr:ValueId>fb8e8fec-c95d-48e8-84e2-03813f7d949d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.Теги" category="Selection">
+				<xr:TypeId>44da9ac4-4243-4851-9210-e8ccd7746449</xr:TypeId>
+				<xr:ValueId>086cdd15-97ed-4e8f-b9ce-2b7498117ee1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.Теги" category="List">
+				<xr:TypeId>dbe5f710-fd1a-4284-b22c-2eef234e1431</xr:TypeId>
+				<xr:ValueId>c2ac5c32-1148-4927-ae8c-607f77b0f9e6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.Теги" category="Manager">
+				<xr:TypeId>2304fedc-8ef9-4acd-96eb-8aa5b0353746</xr:TypeId>
+				<xr:ValueId>abbeb1e6-e5e7-4df5-8e48-912b12f97b5f</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>Теги</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>8971e8e4-6306-4d0c-af54-21075ce95a89</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

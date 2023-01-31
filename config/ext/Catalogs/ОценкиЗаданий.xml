@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Catalog uuid="e68eeab9-9dae-44aa-a0c0-14795678886a">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ОценкиЗаданий" category="Object">
+				<xr:TypeId>7af1d93a-107c-425f-922e-d54efab9e566</xr:TypeId>
+				<xr:ValueId>5235e6ce-4f24-4daf-9604-128a82403c06</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ОценкиЗаданий" category="Ref">
+				<xr:TypeId>a919087b-55bc-422b-8e7d-76732b037579</xr:TypeId>
+				<xr:ValueId>4849d0c6-9d58-4905-9bed-5e42af4716e6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ОценкиЗаданий" category="Selection">
+				<xr:TypeId>eac20ac6-1bc9-4482-8c02-98ef285b1c6b</xr:TypeId>
+				<xr:ValueId>dfc36a52-d626-4321-a2b2-9575f2d8dc84</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ОценкиЗаданий" category="List">
+				<xr:TypeId>b19b4252-05f3-4f9f-ae74-59927ba81795</xr:TypeId>
+				<xr:ValueId>dc99cba2-8ed5-4e21-b78f-935a0e35e793</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ОценкиЗаданий" category="Manager">
+				<xr:TypeId>8ec4b156-aae3-44a1-bb38-a47f37257398</xr:TypeId>
+				<xr:ValueId>2c46b6c5-ec51-425c-ad18-2ebafa8d53c3</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ОценкиЗаданий</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>8d894ab4-716c-41ba-a8ca-1a194542f0ac</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

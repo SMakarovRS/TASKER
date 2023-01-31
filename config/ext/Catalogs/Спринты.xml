@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Catalog uuid="37f5bdd9-5757-43df-ab3d-04da08896a45">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.Спринты" category="Object">
+				<xr:TypeId>990682d6-741f-4a8a-b5a0-45b00fb5f3fb</xr:TypeId>
+				<xr:ValueId>b0e79466-108c-4a1e-958d-e0290b3404a0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.Спринты" category="Ref">
+				<xr:TypeId>da718556-353c-4a5f-bf60-1898443c14e2</xr:TypeId>
+				<xr:ValueId>4f132b88-11cf-45b2-ab12-f5399e6e9e4b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.Спринты" category="Selection">
+				<xr:TypeId>16193192-920e-4afd-bf66-92e293b9c4ca</xr:TypeId>
+				<xr:ValueId>a2f99eb4-408a-46d5-bcef-ce29b570b671</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.Спринты" category="List">
+				<xr:TypeId>2cc3bc71-3361-449f-a2f7-fdec040a4818</xr:TypeId>
+				<xr:ValueId>c3be4adf-cffc-4419-b494-72ab38bae5e3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.Спринты" category="Manager">
+				<xr:TypeId>cf0cd89f-8736-4572-9833-80ea31fdee66</xr:TypeId>
+				<xr:ValueId>17e95d57-4669-4c6e-a7cf-6aa64249c1d5</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>Спринты</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>c5a4f4e3-23b0-45f4-8357-a350fcaa2ab1</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

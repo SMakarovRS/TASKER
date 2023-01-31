@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаЗаписатьИЗакрыть" id="31">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>0</CommandName>
+				<ExtendedTooltip name="ФормаЗаписатьИЗакрытьРасширеннаяПодсказка" id="32"/>
+			</Button>
+			<Button name="ФормаОтмена" id="33">
+				<Type>CommandBarButton</Type>
+				<CommandName>0</CommandName>
+				<ExtendedTooltip name="ФормаОтменаРасширеннаяПодсказка" id="34"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite" callType="After">РСК_ПослеЗаписиПосле</Event>
+		<Event name="OnOpen" callType="Override">РСК_ПриОткрытииВместо</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаУстановкаВремени" id="45">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа установка времени</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа установка времени</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>web:AntiqueWhite</BackColor>
+			<ExtendedTooltip name="ГруппаУстановкаВремениРасширеннаяПодсказка" id="46"/>
+			<ChildItems>
+				<CheckBoxField name="АвторасчетЗатрат" id="38">
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>При авторасчете "Затрат времени" показатели "Дата окончания" и "Затраты времени" расчитываются автоматически, при авторасчете "Даты начала" от текущего времени системы вычитается показатель "Затраты времени".</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>Button</ToolTipRepresentation>
+					<CheckBoxType>Tumbler</CheckBoxType>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>БЛ='Даты начала'; БИ='Затрат времени'</v8:content>
+						</v8:item>
+					</EditFormat>
+					<ContextMenu name="АвторасчетЗатратКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="АвторасчетЗатратРасширеннаяПодсказка" id="40"/>
+				</CheckBoxField>
+				<UsualGroup name="ГруппаДаты" id="51">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Даты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа даты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ThroughAlign>Use</ThroughAlign>
+					<ExtendedTooltip name="ГруппаДатыРасширеннаяПодсказка" id="52"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДатаНачала" id="47">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа дата начала</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа дата начала</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДатаНачалаРасширеннаяПодсказка" id="48"/>
+							<ChildItems>
+								<InputField name="ДатаНачала" id="10">
+									<DropListButton>true</DropListButton>
+									<ContextMenu name="ДатаНачалаКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="ДатаНачалаРасширеннаяПодсказка" id="12"/>
+								</InputField>
+								<Button name="УстановитьТекущееВремяДатеНачала" id="49">
+									<Type>UsualButton</Type>
+									<CommandName>0</CommandName>
+									<ExtendedTooltip name="УстановитьТекущееВремяДатеНачалаРасширеннаяПодсказка" id="50"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДатаОкончания" id="41">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа дата окончания</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа дата окончания</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДатаОкончанияРасширеннаяПодсказка" id="42"/>
+							<ChildItems>
+								<InputField name="ДатаОкончания" id="13">
+									<DropListButton>true</DropListButton>
+									<ContextMenu name="ДатаОкончанияКонтекстноеМеню" id="14"/>
+									<ExtendedTooltip name="ДатаОкончанияРасширеннаяПодсказка" id="15"/>
+								</InputField>
+								<Button name="ТекущееВремя" id="43">
+									<Type>UsualButton</Type>
+									<CommandName>0</CommandName>
+									<ExtendedTooltip name="ТекущееВремяРасширеннаяПодсказка" id="44"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="ЗатратыВремени" id="25">
+					<DefaultItem>true</DefaultItem>
+					<Width>6</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>false</HorizontalStretch>
+					<DropListButton>true</DropListButton>
+					<Mask>99:99</Mask>
+					<ChoiceListHeight>12</ChoiceListHeight>
+					<ContextMenu name="ЗатратыВремениКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ЗатратыВремениРасширеннаяПодсказка" id="27"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Длительность" id="16">
+			<Visible>false</Visible>
+			<ContextMenu name="ДлительностьКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ДлительностьРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="Описание" id="22">
+			<TitleLocation>None</TitleLocation>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<Height>5</Height>
+			<MultiLine>true</MultiLine>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание выполненных работ</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="ОписаниеКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="ВидРаботы" id="19">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Программирование</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="ВидРаботыКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ВидРаботыРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="Объект" id="1">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<AutoMarkIncomplete>true</AutoMarkIncomplete>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задание №1</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="ОбъектКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ОбъектРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Инициатор" id="53">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кто инициировал работы</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="ИнициаторКонтекстноеМеню" id="54"/>
+			<ExtendedTooltip name="ИнициаторРасширеннаяПодсказка" id="55"/>
+		</InputField>
+		<InputField name="Исполнитель" id="4">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<AutoMarkIncomplete>true</AutoMarkIncomplete>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кто выполнял работы</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="ИсполнительКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<LabelDecoration name="ДекорацияНадписьПредупреждение" id="28">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Title formatted="true">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&lt;color #FF0000&gt;Внимание! Длительность по трудозатратам превышает календарные сутки.
+&lt;/&gt;&lt;color #FF0000&gt;Вам необходимо вручную указать трудозатраты за предыдущий период.&lt;/&gt;</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ДекорацияНадписьПредупреждениеКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ДекорацияНадписьПредупреждениеРасширеннаяПодсказка" id="30"/>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes/>
+	<BaseForm version="2.11">
+		<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+			<Autofill>false</Autofill>
+			<ChildItems>
+				<Button name="ФормаЗаписатьИЗакрыть" id="31">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>0</CommandName>
+					<ExtendedTooltip name="ФормаЗаписатьИЗакрытьРасширеннаяПодсказка" id="32"/>
+				</Button>
+				<Button name="ФормаОтмена" id="33">
+					<Type>CommandBarButton</Type>
+					<CommandName>0</CommandName>
+					<ExtendedTooltip name="ФормаОтменаРасширеннаяПодсказка" id="34"/>
+				</Button>
+			</ChildItems>
+		</AutoCommandBar>
+		<ChildItems>
+			<UsualGroup name="ГруппаУстановкаВремени" id="45">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа установка времени</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа установка времени</v8:content>
+					</v8:item>
+				</ToolTip>
+				<HorizontalStretch>true</HorizontalStretch>
+				<Group>Vertical</Group>
+				<ShowTitle>false</ShowTitle>
+				<BackColor>web:AntiqueWhite</BackColor>
+				<ExtendedTooltip name="ГруппаУстановкаВремениРасширеннаяПодсказка" id="46"/>
+				<ChildItems>
+					<CheckBoxField name="АвторасчетЗатрат" id="38">
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>При авторасчете "Затрат времени" показатели "Дата окончания" и "Затраты времени" расчитываются автоматически, при авторасчете "Даты начала" от текущего времени системы вычитается показатель "Затраты времени".</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ToolTipRepresentation>Button</ToolTipRepresentation>
+						<CheckBoxType>Tumbler</CheckBoxType>
+						<EditFormat>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>БЛ='Даты начала'; БИ='Затрат времени'</v8:content>
+							</v8:item>
+						</EditFormat>
+						<ContextMenu name="АвторасчетЗатратКонтекстноеМеню" id="39"/>
+						<ExtendedTooltip name="АвторасчетЗатратРасширеннаяПодсказка" id="40"/>
+					</CheckBoxField>
+					<UsualGroup name="ГруппаДаты" id="51">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Даты</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа даты</v8:content>
+							</v8:item>
+						</ToolTip>
+						<Group>Horizontal</Group>
+						<Representation>None</Representation>
+						<ShowTitle>false</ShowTitle>
+						<ThroughAlign>Use</ThroughAlign>
+						<ExtendedTooltip name="ГруппаДатыРасширеннаяПодсказка" id="52"/>
+						<ChildItems>
+							<UsualGroup name="ГруппаДатаНачала" id="47">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Группа дата начала</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Группа дата начала</v8:content>
+									</v8:item>
+								</ToolTip>
+								<Group>Horizontal</Group>
+								<Representation>None</Representation>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ГруппаДатаНачалаРасширеннаяПодсказка" id="48"/>
+								<ChildItems>
+									<InputField name="ДатаНачала" id="10">
+										<DropListButton>true</DropListButton>
+										<ContextMenu name="ДатаНачалаКонтекстноеМеню" id="11"/>
+										<ExtendedTooltip name="ДатаНачалаРасширеннаяПодсказка" id="12"/>
+									</InputField>
+									<Button name="УстановитьТекущееВремяДатеНачала" id="49">
+										<Type>UsualButton</Type>
+										<CommandName>0</CommandName>
+										<ExtendedTooltip name="УстановитьТекущееВремяДатеНачалаРасширеннаяПодсказка" id="50"/>
+									</Button>
+								</ChildItems>
+							</UsualGroup>
+							<UsualGroup name="ГруппаДатаОкончания" id="41">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Группа дата окончания</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Группа дата окончания</v8:content>
+									</v8:item>
+								</ToolTip>
+								<Group>Horizontal</Group>
+								<Representation>None</Representation>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ГруппаДатаОкончанияРасширеннаяПодсказка" id="42"/>
+								<ChildItems>
+									<InputField name="ДатаОкончания" id="13">
+										<DropListButton>true</DropListButton>
+										<ContextMenu name="ДатаОкончанияКонтекстноеМеню" id="14"/>
+										<ExtendedTooltip name="ДатаОкончанияРасширеннаяПодсказка" id="15"/>
+									</InputField>
+									<Button name="ТекущееВремя" id="43">
+										<Type>UsualButton</Type>
+										<CommandName>0</CommandName>
+										<ExtendedTooltip name="ТекущееВремяРасширеннаяПодсказка" id="44"/>
+									</Button>
+								</ChildItems>
+							</UsualGroup>
+						</ChildItems>
+					</UsualGroup>
+					<InputField name="ЗатратыВремени" id="25">
+						<DefaultItem>true</DefaultItem>
+						<Width>6</Width>
+						<AutoMaxWidth>false</AutoMaxWidth>
+						<HorizontalStretch>false</HorizontalStretch>
+						<DropListButton>true</DropListButton>
+						<Mask>99:99</Mask>
+						<ChoiceListHeight>12</ChoiceListHeight>
+						<ContextMenu name="ЗатратыВремениКонтекстноеМеню" id="26"/>
+						<ExtendedTooltip name="ЗатратыВремениРасширеннаяПодсказка" id="27"/>
+					</InputField>
+				</ChildItems>
+			</UsualGroup>
+			<InputField name="Длительность" id="16">
+				<Visible>false</Visible>
+				<ContextMenu name="ДлительностьКонтекстноеМеню" id="17"/>
+				<ExtendedTooltip name="ДлительностьРасширеннаяПодсказка" id="18"/>
+			</InputField>
+			<InputField name="Описание" id="22">
+				<TitleLocation>None</TitleLocation>
+				<AutoMaxWidth>false</AutoMaxWidth>
+				<Height>5</Height>
+				<MultiLine>true</MultiLine>
+				<InputHint>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Описание выполненных работ</v8:content>
+					</v8:item>
+				</InputHint>
+				<ContextMenu name="ОписаниеКонтекстноеМеню" id="23"/>
+				<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="24"/>
+			</InputField>
+			<InputField name="ВидРаботы" id="19">
+				<AutoMaxWidth>false</AutoMaxWidth>
+				<InputHint>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Программирование</v8:content>
+					</v8:item>
+				</InputHint>
+				<ContextMenu name="ВидРаботыКонтекстноеМеню" id="20"/>
+				<ExtendedTooltip name="ВидРаботыРасширеннаяПодсказка" id="21"/>
+			</InputField>
+			<InputField name="Объект" id="1">
+				<AutoMaxWidth>false</AutoMaxWidth>
+				<AutoMarkIncomplete>true</AutoMarkIncomplete>
+				<InputHint>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Задание №1</v8:content>
+					</v8:item>
+				</InputHint>
+				<ContextMenu name="ОбъектКонтекстноеМеню" id="2"/>
+				<ExtendedTooltip name="ОбъектРасширеннаяПодсказка" id="3"/>
+			</InputField>
+			<InputField name="Инициатор" id="53">
+				<AutoMaxWidth>false</AutoMaxWidth>
+				<InputHint>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Кто инициировал работы</v8:content>
+					</v8:item>
+				</InputHint>
+				<ContextMenu name="ИнициаторКонтекстноеМеню" id="54"/>
+				<ExtendedTooltip name="ИнициаторРасширеннаяПодсказка" id="55"/>
+			</InputField>
+			<InputField name="Исполнитель" id="4">
+				<AutoMaxWidth>false</AutoMaxWidth>
+				<AutoMarkIncomplete>true</AutoMarkIncomplete>
+				<InputHint>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Кто выполнял работы</v8:content>
+					</v8:item>
+				</InputHint>
+				<ContextMenu name="ИсполнительКонтекстноеМеню" id="5"/>
+				<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="6"/>
+			</InputField>
+			<LabelDecoration name="ДекорацияНадписьПредупреждение" id="28">
+				<AutoMaxWidth>false</AutoMaxWidth>
+				<HorizontalStretch>true</HorizontalStretch>
+				<Title formatted="true">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>&lt;color #FF0000&gt;Внимание! Длительность по трудозатратам превышает календарные сутки.
+&lt;/&gt;&lt;color #FF0000&gt;Вам необходимо вручную указать трудозатраты за предыдущий период.&lt;/&gt;</v8:content>
+					</v8:item>
+				</Title>
+				<ContextMenu name="ДекорацияНадписьПредупреждениеКонтекстноеМеню" id="29"/>
+				<ExtendedTooltip name="ДекорацияНадписьПредупреждениеРасширеннаяПодсказка" id="30"/>
+			</LabelDecoration>
+		</ChildItems>
+		<Attributes/>
+	</BaseForm>
+</Form>

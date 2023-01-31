@@ -1,0 +1,767 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<SearchStringAddition name="СтрокаПоиска" id="61">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Строка поиска</v8:content>
+					</v8:item>
+				</Title>
+				<ContextMenu name="СтрокаПоискаКонтекстноеМеню" id="62"/>
+				<ExtendedTooltip name="СтрокаПоискаРасширеннаяПодсказка" id="63"/>
+			</SearchStringAddition>
+			<SearchControlAddition name="УправлениеПоиском" id="64">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Управление поиском</v8:content>
+					</v8:item>
+				</Title>
+				<ContextMenu name="УправлениеПоискомКонтекстноеМеню" id="65"/>
+				<ExtendedTooltip name="УправлениеПоискомРасширеннаяПодсказка" id="66"/>
+			</SearchControlAddition>
+			<Button name="ФормаПоказыватьТолькоАктуальных" id="70">
+				<Type>CommandBarButton</Type>
+				<CommandName>0</CommandName>
+				<ExtendedTooltip name="ФормаПоказыватьТолькоАктуальныхРасширеннаяПодсказка" id="71"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<Table name="КомпоновщикНастроекПользовательскиеНастройки" id="78">
+			<Autofill>true</Autofill>
+			<HeightInTableRows>2</HeightInTableRows>
+			<DataPath>Список.SettingsComposer.UserSettings</DataPath>
+			<CommandSet>
+				<ExcludedCommand>HierarchicalList</ExcludedCommand>
+				<ExcludedCommand>List</ExcludedCommand>
+				<ExcludedCommand>Tree</ExcludedCommand>
+			</CommandSet>
+			<ViewMode>All</ViewMode>
+			<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиКонтекстноеМеню" id="79"/>
+			<AutoCommandBar name="КомпоновщикНастроекПользовательскиеНастройкиКоманднаяПанель" id="80"/>
+			<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="81"/>
+			<SearchStringAddition name="КомпоновщикНастроекПользовательскиеНастройкиСтрокаПоиска" id="82">
+				<AdditionSource>
+					<Item>КомпоновщикНастроекПользовательскиеНастройки</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиСтрокаПоискаКонтекстноеМеню" id="83"/>
+				<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиСтрокаПоискаРасширеннаяПодсказка" id="84"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="КомпоновщикНастроекПользовательскиеНастройкиСостояниеПросмотра" id="85">
+				<AdditionSource>
+					<Item>КомпоновщикНастроекПользовательскиеНастройки</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиСостояниеПросмотраКонтекстноеМеню" id="86"/>
+				<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиСостояниеПросмотраРасширеннаяПодсказка" id="87"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="КомпоновщикНастроекПользовательскиеНастройкиУправлениеПоиском" id="88">
+				<AdditionSource>
+					<Item>КомпоновщикНастроекПользовательскиеНастройки</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="КомпоновщикНастроекПользовательскиеНастройкиУправлениеПоискомКонтекстноеМеню" id="89"/>
+				<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиУправлениеПоискомРасширеннаяПодсказка" id="90"/>
+			</SearchControlAddition>
+		</Table>
+		<UsualGroup name="ГруппаСлева" id="52">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа слева</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСлеваРасширеннаяПодсказка" id="53"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаПользовательскихНастроек" id="50">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа пользовательских настроек</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПользовательскихНастроекРасширеннаяПодсказка" id="51"/>
+				</UsualGroup>
+				<Table name="Список" id="1">
+					<Representation>List</Representation>
+					<CommandBarLocation>None</CommandBarLocation>
+					<SkipOnInput>false</SkipOnInput>
+					<DefaultItem>true</DefaultItem>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<InitialTreeView>ExpandTopLevel</InitialTreeView>
+					<EnableStartDrag>true</EnableStartDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>Список</DataPath>
+					<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список</v8:content>
+						</v8:item>
+					</Title>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+					<AutoCommandBar name="СписокКоманднаяПанель" id="3"/>
+					<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="28"/>
+					<SearchStringAddition name="СписокСтрокаПоиска" id="29">
+						<AdditionSource>
+							<Item>Список</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="30"/>
+						<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="31"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СписокСостояниеПросмотра" id="32">
+						<AdditionSource>
+							<Item>Список</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<HorizontalLocation>Left</HorizontalLocation>
+						<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="33"/>
+						<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="34"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СписокУправлениеПоиском" id="35">
+						<AdditionSource>
+							<Item>Список</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="36"/>
+						<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="37"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="Наименование" id="4">
+							<DataPath>Список.Наименование</DataPath>
+							<DefaultItem>true</DefaultItem>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="40"/>
+						</LabelField>
+						<LabelField name="Владелец" id="8">
+							<DataPath>Список.Владелец</DataPath>
+							<UserVisible>
+								<xr:Common>true</xr:Common>
+								<xr:Value name="Role.РСК_ОсновнаяРоль">true</xr:Value>
+							</UserVisible>
+							<ContextMenu name="ВладелецКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="39"/>
+						</LabelField>
+						<ColumnGroup name="Телефон" id="91">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Телефон</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Телефон</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>InCell</Group>
+							<ShowInHeader>true</ShowInHeader>
+							<ExtendedTooltip name="ТелефонРасширеннаяПодсказка" id="92"/>
+							<ChildItems>
+								<LabelField name="НомерТелефона1" id="99">
+									<DataPath>Список.НомерТелефона</DataPath>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>10</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="НомерТелефона1КонтекстноеМеню" id="100"/>
+									<ExtendedTooltip name="НомерТелефона1РасширеннаяПодсказка" id="101"/>
+								</LabelField>
+								<LabelField name="НомерТелефона2" id="93">
+									<DataPath>Список.НомерТелефона2</DataPath>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>10</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="НомерТелефона2КонтекстноеМеню" id="94"/>
+									<ExtendedTooltip name="НомерТелефона2РасширеннаяПодсказка" id="95"/>
+								</LabelField>
+								<LabelField name="НомерТелефона3" id="96">
+									<DataPath>Список.НомерТелефона3</DataPath>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>10</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="НомерТелефона3КонтекстноеМеню" id="97"/>
+									<ExtendedTooltip name="НомерТелефона3РасширеннаяПодсказка" id="98"/>
+								</LabelField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="Email" id="102">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Email</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Email</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>InCell</Group>
+							<ShowInHeader>true</ShowInHeader>
+							<ExtendedTooltip name="EmailРасширеннаяПодсказка" id="103"/>
+							<ChildItems>
+								<LabelField name="АдресЭП1" id="110">
+									<DataPath>Список.АдресЭП</DataPath>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>15</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="АдресЭП1КонтекстноеМеню" id="111"/>
+									<ExtendedTooltip name="АдресЭП1РасширеннаяПодсказка" id="112"/>
+								</LabelField>
+								<LabelField name="АдресЭП2" id="104">
+									<DataPath>Список.АдресЭП2</DataPath>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>15</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="АдресЭП2КонтекстноеМеню" id="105"/>
+									<ExtendedTooltip name="АдресЭП2РасширеннаяПодсказка" id="106"/>
+								</LabelField>
+								<LabelField name="АдресЭП3" id="107">
+									<DataPath>Список.АдресЭП3</DataPath>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>15</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="АдресЭП3КонтекстноеМеню" id="108"/>
+									<ExtendedTooltip name="АдресЭП3РасширеннаяПодсказка" id="109"/>
+								</LabelField>
+							</ChildItems>
+						</ColumnGroup>
+						<LabelField name="РольКонтактногоЛица" id="24">
+							<DataPath>Список.РольКонтактногоЛица</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Роль</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="РольКонтактногоЛицаКонтекстноеМеню" id="25"/>
+							<ExtendedTooltip name="РольКонтактногоЛицаРасширеннаяПодсказка" id="41"/>
+						</LabelField>
+						<LabelField name="Местоположение" id="58">
+							<DataPath>Список.Местоположение</DataPath>
+							<ContextMenu name="МестоположениеКонтекстноеМеню" id="59"/>
+							<ExtendedTooltip name="МестоположениеРасширеннаяПодсказка" id="60"/>
+						</LabelField>
+						<LabelField name="Ответственный" id="22">
+							<DataPath>Список.Ответственный</DataPath>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
+							<ContextMenu name="ОтветственныйКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="45"/>
+						</LabelField>
+						<CheckBoxField name="Актуальность" id="67">
+							<DataPath>Список.Актуальность</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="АктуальностьКонтекстноеМеню" id="68"/>
+							<ExtendedTooltip name="АктуальностьРасширеннаяПодсказка" id="69"/>
+						</CheckBoxField>
+						<LabelField name="Комментарий" id="16">
+							<DataPath>Список.Комментарий</DataPath>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
+							<Height>1</Height>
+							<ContextMenu name="КомментарийКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="46"/>
+						</LabelField>
+						<LabelField name="Ссылка" id="26">
+							<DataPath>Список.Ссылка</DataPath>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
+							<ContextMenu name="СсылкаКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="47"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСправа" id="54">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа справа</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСправаРасширеннаяПодсказка" id="55"/>
+			<ChildItems>
+				<UsualGroup name="КонтактнаяИнформация" id="56">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контактная информация</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="КонтактнаяИнформацияРасширеннаяПодсказка" id="57"/>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1000001">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Список.Актуальность</Field>
+				<Field>Список.Ссылка</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникКонтактныеЛица.Ссылка КАК Ссылка,
+	СправочникКонтактныеЛица.ПометкаУдаления КАК ПометкаУдаления,
+	СправочникКонтактныеЛица.Предопределенный КАК Предопределенный,
+	СправочникКонтактныеЛица.Владелец КАК Владелец,
+	СправочникКонтактныеЛица.Код КАК Код,
+	СправочникКонтактныеЛица.Наименование КАК Наименование,
+	СправочникКонтактныеЛица.Физлицо КАК Физлицо,
+	СправочникКонтактныеЛица.ДатаРегистрацииСвязи КАК ДатаРегистрацииСвязи,
+	СправочникКонтактныеЛица.ДатаПрекращенияСвязи КАК ДатаПрекращенияСвязи,
+	СправочникКонтактныеЛица.Ответственный КАК Ответственный,
+	СправочникКонтактныеЛица.Комментарий КАК Комментарий,
+	СправочникКонтактныеЛица.Местоположение КАК Местоположение,
+	СправочникКонтактныеЛица.Актуальность КАК Актуальность,
+	СправочникКонтактныеЛица.РолиКонтактногоЛица.(
+		Ссылка КАК Ссылка,
+		НомерСтроки КАК НомерСтроки,
+		РольКонтактногоЛица КАК РольКонтактногоЛица
+	) КАК РолиКонтактногоЛица,
+	ТаблицаРоли.РольКонтактногоЛица КАК РольКонтактногоЛица,
+	СправочникКонтактныеЛица.КонтактнаяИнформация.(
+		Ссылка КАК Ссылка,
+		НомерСтроки КАК НомерСтроки,
+		Тип КАК Тип,
+		Вид КАК Вид,
+		Представление КАК Представление,
+		ЗначенияПолей КАК ЗначенияПолей,
+		Страна КАК Страна,
+		Регион КАК Регион,
+		Город КАК Город,
+		АдресЭП КАК АдресЭП,
+		ДоменноеИмяСервера КАК ДоменноеИмяСервера,
+		НомерТелефона КАК НомерТелефона,
+		НомерТелефонаБезКодов КАК НомерТелефонаБезКодов
+	) КАК КонтактнаяИнформация,
+	КИ.НомерТелефона КАК НомерТелефона,
+	КИ.АдресЭП КАК АдресЭП,
+	КИ2.НомерТелефона КАК НомерТелефона2,
+	КИ2.АдресЭП КАК АдресЭП2,
+	КИ3.НомерТелефона КАК НомерТелефона3,
+	КИ3.АдресЭП КАК АдресЭП3
+ИЗ
+	Справочник.КонтактныеЛица КАК СправочникКонтактныеЛица
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			КонтактныеЛицаРолиКонтактногоЛица.Ссылка КАК Ссылка,
+			КонтактныеЛицаРолиКонтактногоЛица.РольКонтактногоЛица.Наименование КАК РольКонтактногоЛица
+		ИЗ
+			Справочник.КонтактныеЛица.РолиКонтактногоЛица КАК КонтактныеЛицаРолиКонтактногоЛица
+		ГДЕ
+			КонтактныеЛицаРолиКонтактногоЛица.НомерСтроки = 1) КАК ТаблицаРоли
+		ПО СправочникКонтактныеЛица.Ссылка = ТаблицаРоли.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			КонтактныеЛицаКонтактнаяИнформация.Ссылка КАК Ссылка,
+			КонтактныеЛицаКонтактнаяИнформация.НомерТелефона КАК НомерТелефона,
+			КонтактныеЛицаКонтактнаяИнформация.АдресЭП КАК АдресЭП
+		ИЗ
+			Справочник.КонтактныеЛица.КонтактнаяИнформация КАК КонтактныеЛицаКонтактнаяИнформация
+		ГДЕ
+			КонтактныеЛицаКонтактнаяИнформация.НомерСтроки = 1) КАК КИ
+		ПО СправочникКонтактныеЛица.Ссылка = КИ.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			КонтактныеЛицаКонтактнаяИнформация.Ссылка КАК Ссылка,
+			КонтактныеЛицаКонтактнаяИнформация.НомерТелефона КАК НомерТелефона,
+			КонтактныеЛицаКонтактнаяИнформация.АдресЭП КАК АдресЭП
+		ИЗ
+			Справочник.КонтактныеЛица.КонтактнаяИнформация КАК КонтактныеЛицаКонтактнаяИнформация
+		ГДЕ
+			КонтактныеЛицаКонтактнаяИнформация.НомерСтроки = 2) КАК КИ2
+		ПО СправочникКонтактныеЛица.Ссылка = КИ2.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			КонтактныеЛицаКонтактнаяИнформация.Ссылка КАК Ссылка,
+			КонтактныеЛицаКонтактнаяИнформация.НомерТелефона КАК НомерТелефона,
+			КонтактныеЛицаКонтактнаяИнформация.АдресЭП КАК АдресЭП
+		ИЗ
+			Справочник.КонтактныеЛица.КонтактнаяИнформация КАК КонтактныеЛицаКонтактнаяИнформация
+		ГДЕ
+			КонтактныеЛицаКонтактнаяИнформация.НомерСтроки = 3) КАК КИ3
+		ПО СправочникКонтактныеЛица.Ссылка = КИ3.Ссылка</QueryText>
+				<MainTable>Catalog.КонтактныеЛица</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">Владелец</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:userSettingID>a72509e9-a024-4c80-8d91-f6e10baf1693</dcsset:userSettingID>
+							<dcsset:userSettingPresentation xsi:type="xs:string">Клиент</dcsset:userSettingPresentation>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">Наименование</dcsset:left>
+							<dcsset:comparisonType>Contains</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:string"/>
+							<dcsset:userSettingID>fb8c6f33-fd6a-484c-80b3-589cdf41ac4b</dcsset:userSettingID>
+							<dcsset:userSettingPresentation xsi:type="xs:string">Контакт</dcsset:userSettingPresentation>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<BaseForm version="2.11">
+		<VerticalScroll>useIfNecessary</VerticalScroll>
+		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+			<ChildItems>
+				<SearchStringAddition name="СтрокаПоиска" id="61">
+					<AdditionSource>
+						<Item>Список</Item>
+						<Type>SearchStringRepresentation</Type>
+					</AdditionSource>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Строка поиска</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="СтрокаПоискаКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="СтрокаПоискаРасширеннаяПодсказка" id="63"/>
+				</SearchStringAddition>
+				<SearchControlAddition name="УправлениеПоиском" id="64">
+					<AdditionSource>
+						<Item>Список</Item>
+						<Type>SearchControl</Type>
+					</AdditionSource>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Управление поиском</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="УправлениеПоискомКонтекстноеМеню" id="65"/>
+					<ExtendedTooltip name="УправлениеПоискомРасширеннаяПодсказка" id="66"/>
+				</SearchControlAddition>
+				<Button name="ФормаПоказыватьТолькоАктуальных" id="70">
+					<Type>CommandBarButton</Type>
+					<CommandName>0</CommandName>
+					<ExtendedTooltip name="ФормаПоказыватьТолькоАктуальныхРасширеннаяПодсказка" id="71"/>
+				</Button>
+			</ChildItems>
+		</AutoCommandBar>
+		<ChildItems>
+			<UsualGroup name="ГруппаСлева" id="52">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа слева</v8:content>
+					</v8:item>
+				</Title>
+				<Group>Vertical</Group>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаСлеваРасширеннаяПодсказка" id="53"/>
+				<ChildItems>
+					<UsualGroup name="ГруппаПользовательскихНастроек" id="50">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа пользовательских настроек</v8:content>
+							</v8:item>
+						</Title>
+						<Group>Vertical</Group>
+						<Representation>None</Representation>
+						<ShowTitle>false</ShowTitle>
+						<ExtendedTooltip name="ГруппаПользовательскихНастроекРасширеннаяПодсказка" id="51"/>
+					</UsualGroup>
+					<Table name="Список" id="1">
+						<Representation>List</Representation>
+						<CommandBarLocation>None</CommandBarLocation>
+						<SkipOnInput>false</SkipOnInput>
+						<DefaultItem>true</DefaultItem>
+						<UseAlternationRowColor>true</UseAlternationRowColor>
+						<InitialTreeView>ExpandTopLevel</InitialTreeView>
+						<EnableStartDrag>true</EnableStartDrag>
+						<FileDragMode>AsFile</FileDragMode>
+						<DataPath>Список</DataPath>
+						<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список</v8:content>
+							</v8:item>
+						</Title>
+						<SearchStringLocation>None</SearchStringLocation>
+						<ViewStatusLocation>None</ViewStatusLocation>
+						<SearchControlLocation>None</SearchControlLocation>
+						<AutoRefresh>false</AutoRefresh>
+						<AutoRefreshPeriod>60</AutoRefreshPeriod>
+						<Period>
+							<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+							<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+							<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+						</Period>
+						<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+						<RestoreCurrentRow>false</RestoreCurrentRow>
+						<TopLevelParent xsi:nil="true"/>
+						<ShowRoot>true</ShowRoot>
+						<AllowRootChoice>false</AllowRootChoice>
+						<UpdateOnDataChange>Auto</UpdateOnDataChange>
+						<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+						<AutoCommandBar name="СписокКоманднаяПанель" id="3"/>
+						<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="28"/>
+						<SearchStringAddition name="СписокСтрокаПоиска" id="29">
+							<AdditionSource>
+								<Item>Список</Item>
+								<Type>SearchStringRepresentation</Type>
+							</AdditionSource>
+							<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="30"/>
+							<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="31"/>
+						</SearchStringAddition>
+						<ViewStatusAddition name="СписокСостояниеПросмотра" id="32">
+							<AdditionSource>
+								<Item>Список</Item>
+								<Type>ViewStatusRepresentation</Type>
+							</AdditionSource>
+							<HorizontalLocation>Left</HorizontalLocation>
+							<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="34"/>
+						</ViewStatusAddition>
+						<SearchControlAddition name="СписокУправлениеПоиском" id="35">
+							<AdditionSource>
+								<Item>Список</Item>
+								<Type>SearchControl</Type>
+							</AdditionSource>
+							<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="37"/>
+						</SearchControlAddition>
+						<ChildItems>
+							<LabelField name="Наименование" id="4">
+								<DataPath>Список.Наименование</DataPath>
+								<DefaultItem>true</DefaultItem>
+								<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+								<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="40"/>
+							</LabelField>
+							<LabelField name="Владелец" id="8">
+								<DataPath>Список.Владелец</DataPath>
+								<UserVisible>
+									<xr:Common>false</xr:Common>
+								</UserVisible>
+								<ContextMenu name="ВладелецКонтекстноеМеню" id="9"/>
+								<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="39"/>
+							</LabelField>
+							<LabelField name="РольКонтактногоЛица" id="24">
+								<DataPath>Список.РольКонтактногоЛица</DataPath>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Роль</v8:content>
+									</v8:item>
+								</Title>
+								<ContextMenu name="РольКонтактногоЛицаКонтекстноеМеню" id="25"/>
+								<ExtendedTooltip name="РольКонтактногоЛицаРасширеннаяПодсказка" id="41"/>
+							</LabelField>
+							<LabelField name="Местоположение" id="58">
+								<DataPath>Список.Местоположение</DataPath>
+								<ContextMenu name="МестоположениеКонтекстноеМеню" id="59"/>
+								<ExtendedTooltip name="МестоположениеРасширеннаяПодсказка" id="60"/>
+							</LabelField>
+							<LabelField name="Ответственный" id="22">
+								<DataPath>Список.Ответственный</DataPath>
+								<UserVisible>
+									<xr:Common>false</xr:Common>
+								</UserVisible>
+								<ContextMenu name="ОтветственныйКонтекстноеМеню" id="23"/>
+								<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="45"/>
+							</LabelField>
+							<CheckBoxField name="Актуальность" id="67">
+								<DataPath>Список.Актуальность</DataPath>
+								<TitleLocation>None</TitleLocation>
+								<CheckBoxType>Auto</CheckBoxType>
+								<ContextMenu name="АктуальностьКонтекстноеМеню" id="68"/>
+								<ExtendedTooltip name="АктуальностьРасширеннаяПодсказка" id="69"/>
+							</CheckBoxField>
+							<LabelField name="Комментарий" id="16">
+								<DataPath>Список.Комментарий</DataPath>
+								<UserVisible>
+									<xr:Common>false</xr:Common>
+								</UserVisible>
+								<Height>1</Height>
+								<ContextMenu name="КомментарийКонтекстноеМеню" id="17"/>
+								<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="46"/>
+							</LabelField>
+							<LabelField name="Ссылка" id="26">
+								<DataPath>Список.Ссылка</DataPath>
+								<UserVisible>
+									<xr:Common>false</xr:Common>
+								</UserVisible>
+								<ContextMenu name="СсылкаКонтекстноеМеню" id="27"/>
+								<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="47"/>
+							</LabelField>
+						</ChildItems>
+					</Table>
+				</ChildItems>
+			</UsualGroup>
+			<UsualGroup name="ГруппаСправа" id="54">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа справа</v8:content>
+					</v8:item>
+				</Title>
+				<Group>Vertical</Group>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаСправаРасширеннаяПодсказка" id="55"/>
+				<ChildItems>
+					<UsualGroup name="КонтактнаяИнформация" id="56">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Контактная информация</v8:content>
+							</v8:item>
+						</Title>
+						<Group>Vertical</Group>
+						<ExtendedTooltip name="КонтактнаяИнформацияРасширеннаяПодсказка" id="57"/>
+					</UsualGroup>
+				</ChildItems>
+			</UsualGroup>
+		</ChildItems>
+		<Attributes>
+			<Attribute name="Список" id="1000001">
+				<Type>
+					<v8:Type>cfg:DynamicList</v8:Type>
+				</Type>
+				<MainAttribute>true</MainAttribute>
+				<UseAlways>
+					<Field>Список.Актуальность</Field>
+					<Field>Список.Ссылка</Field>
+				</UseAlways>
+				<Settings xsi:type="DynamicList">
+					<ManualQuery>true</ManualQuery>
+					<DynamicDataRead>true</DynamicDataRead>
+					<QueryText>ВЫБРАТЬ
+	СправочникКонтактныеЛица.Ссылка КАК Ссылка,
+	СправочникКонтактныеЛица.ПометкаУдаления КАК ПометкаУдаления,
+	СправочникКонтактныеЛица.Предопределенный КАК Предопределенный,
+	СправочникКонтактныеЛица.Владелец КАК Владелец,
+	СправочникКонтактныеЛица.Код КАК Код,
+	СправочникКонтактныеЛица.Наименование КАК Наименование,
+	СправочникКонтактныеЛица.Физлицо КАК Физлицо,
+	СправочникКонтактныеЛица.ДатаРегистрацииСвязи КАК ДатаРегистрацииСвязи,
+	СправочникКонтактныеЛица.ДатаПрекращенияСвязи КАК ДатаПрекращенияСвязи,
+	СправочникКонтактныеЛица.Ответственный КАК Ответственный,
+	СправочникКонтактныеЛица.Комментарий КАК Комментарий,
+	СправочникКонтактныеЛица.Местоположение КАК Местоположение,
+	СправочникКонтактныеЛица.Актуальность КАК Актуальность,
+	СправочникКонтактныеЛица.РолиКонтактногоЛица.(
+		Ссылка,
+		НомерСтроки,
+		РольКонтактногоЛица
+	) КАК РолиКонтактногоЛица,
+	ТаблицаРоли.РольКонтактногоЛица КАК РольКонтактногоЛица,
+	СправочникКонтактныеЛица.КонтактнаяИнформация.(
+		Ссылка,
+		НомерСтроки,
+		Тип,
+		Вид,
+		Представление,
+		ЗначенияПолей,
+		Страна,
+		Регион,
+		Город,
+		АдресЭП,
+		ДоменноеИмяСервера,
+		НомерТелефона,
+		НомерТелефонаБезКодов
+	)
+ИЗ
+	Справочник.КонтактныеЛица КАК СправочникКонтактныеЛица
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			КонтактныеЛицаРолиКонтактногоЛица.Ссылка КАК Ссылка,
+			КонтактныеЛицаРолиКонтактногоЛица.РольКонтактногоЛица.Наименование КАК РольКонтактногоЛица
+		ИЗ
+			Справочник.КонтактныеЛица.РолиКонтактногоЛица КАК КонтактныеЛицаРолиКонтактногоЛица
+		ГДЕ
+			КонтактныеЛицаРолиКонтактногоЛица.НомерСтроки = 1) КАК ТаблицаРоли
+		ПО СправочникКонтактныеЛица.Ссылка = ТаблицаРоли.Ссылка</QueryText>
+					<MainTable>Catalog.КонтактныеЛица</MainTable>
+					<ListSettings>
+						<dcsset:filter>
+							<dcsset:viewMode>Normal</dcsset:viewMode>
+							<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+						</dcsset:filter>
+						<dcsset:order>
+							<dcsset:viewMode>Normal</dcsset:viewMode>
+							<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+						</dcsset:order>
+						<dcsset:conditionalAppearance>
+							<dcsset:viewMode>Normal</dcsset:viewMode>
+							<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+						</dcsset:conditionalAppearance>
+						<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+						<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+					</ListSettings>
+				</Settings>
+			</Attribute>
+		</Attributes>
+	</BaseForm>
+</Form>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Catalog uuid="59abebe6-1466-4b99-a733-2de920bc73f6">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.МестаХранения" category="Object">
+				<xr:TypeId>62f939dd-64da-4a8a-a36f-8b0a1bcbeed2</xr:TypeId>
+				<xr:ValueId>c7def7d9-4e02-4870-92b1-885fd461938a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.МестаХранения" category="Ref">
+				<xr:TypeId>5317132c-2ccb-4048-8919-fe2700742a79</xr:TypeId>
+				<xr:ValueId>94d48b6a-c038-47f9-b4b0-03a9629b1fa2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.МестаХранения" category="Selection">
+				<xr:TypeId>96c86089-8aa7-4c0b-8f2c-35ab577ec4ba</xr:TypeId>
+				<xr:ValueId>a192f0c3-2f02-4824-977e-5ae13dec4319</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.МестаХранения" category="List">
+				<xr:TypeId>caf86a9b-d986-438f-a1f9-43feca6a9f17</xr:TypeId>
+				<xr:ValueId>65fd560b-d605-4650-99e2-18ec28e5a060</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.МестаХранения" category="Manager">
+				<xr:TypeId>f4c7903e-5ce2-450c-9e87-2625b5126ef8</xr:TypeId>
+				<xr:ValueId>46ddcafa-f36e-40d0-a40d-11936962faad</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>МестаХранения</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>37dbde5d-5b46-4cd3-a2d7-380ea013b800</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

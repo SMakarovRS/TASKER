@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<InformationRegister uuid="b62b109c-c321-41bb-948d-f5bc08b7088c">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.ОчередьВыполненияЗаданий" category="Record">
+				<xr:TypeId>16b3f367-98a7-478c-a131-0dc74508d60b</xr:TypeId>
+				<xr:ValueId>76e754e9-5319-4597-82d9-c0bf2860c159</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.ОчередьВыполненияЗаданий" category="Manager">
+				<xr:TypeId>2f792764-f755-4365-ad16-ba12ea41e28e</xr:TypeId>
+				<xr:ValueId>5e94c068-e9ca-4d0a-b221-e1b83ad42f56</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.ОчередьВыполненияЗаданий" category="Selection">
+				<xr:TypeId>530cbe42-4a16-4f96-9321-f3e59d36d3a9</xr:TypeId>
+				<xr:ValueId>3afe35d1-dd6d-40a5-b533-5d5796249082</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.ОчередьВыполненияЗаданий" category="List">
+				<xr:TypeId>858f1b59-6e9b-48be-b572-fe62a0401adf</xr:TypeId>
+				<xr:ValueId>c27622d2-32a7-4d10-9005-1ac8880f5aa1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.ОчередьВыполненияЗаданий" category="RecordSet">
+				<xr:TypeId>2400cef1-68ef-459d-b1ca-6d684426428a</xr:TypeId>
+				<xr:ValueId>61414180-7c79-4a61-b454-14947e68833a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.ОчередьВыполненияЗаданий" category="RecordKey">
+				<xr:TypeId>811eca99-fd93-45eb-ace3-dad873da0d86</xr:TypeId>
+				<xr:ValueId>4b5f86cb-81cc-472a-81fe-7efad8865d9a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.ОчередьВыполненияЗаданий" category="RecordManager">
+				<xr:TypeId>c87c65b3-0f7d-40bb-bc43-1045ff244a44</xr:TypeId>
+				<xr:ValueId>54e176f1-5ddd-45ac-b987-781b48ae1061</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ОчередьВыполненияЗаданий</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>f9487cde-4669-496c-9a99-2e6460dd6f25</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="001958ec-ea59-4f2b-a3db-b34fe8440e02">
+				<InternalInfo/>
+				<Properties>
+					<Name>НомерВОчереди</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>61f68152-7ee5-4793-a85e-f779d18983ba</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Dimension uuid="11335cc4-cf29-47f0-ac91-fe4272ce1316">
+				<InternalInfo/>
+				<Properties>
+					<Name>Задание</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>09b7db91-ae86-4686-ae14-06d358dfc595</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:DocumentRef.Задание</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

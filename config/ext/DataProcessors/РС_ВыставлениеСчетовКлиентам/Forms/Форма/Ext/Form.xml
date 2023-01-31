@@ -1,0 +1,757 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Шапка" id="98">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="99"/>
+			<ChildItems>
+				<UsualGroup name="Группа1" id="31">
+					<VerticalStretch>true</VerticalStretch>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<Group>Vertical</Group>
+					<VerticalAlign>Bottom</VerticalAlign>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="32"/>
+					<ChildItems>
+						<InputField name="Период" id="136">
+							<DataPath>Период</DataPath>
+							<ContextMenu name="ПериодКонтекстноеМеню" id="137"/>
+							<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="138"/>
+						</InputField>
+						<InputField name="КлиентФильтр" id="103">
+							<DataPath>Клиент</DataPath>
+							<ContextMenu name="КлиентФильтрКонтекстноеМеню" id="104"/>
+							<ExtendedTooltip name="КлиентФильтрРасширеннаяПодсказка" id="105"/>
+						</InputField>
+						<InputField name="ОтветственныйФильтр" id="106">
+							<DataPath>Ответственный</DataPath>
+							<ContextMenu name="ОтветственныйФильтрКонтекстноеМеню" id="107"/>
+							<ExtendedTooltip name="ОтветственныйФильтрРасширеннаяПодсказка" id="108"/>
+						</InputField>
+						<InputField name="РуководительФильтм" id="166">
+							<DataPath>Руководитель</DataPath>
+							<ContextMenu name="РуководительФильтмКонтекстноеМеню" id="167"/>
+							<ExtendedTooltip name="РуководительФильтмРасширеннаяПодсказка" id="168"/>
+						</InputField>
+						<UsualGroup name="Группа4" id="172">
+							<HorizontalStretch>true</HorizontalStretch>
+							<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="173"/>
+							<ChildItems>
+								<CheckBoxField name="Поле1" id="169">
+									<DataPath>НеВыводитьЗакрытые</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="Поле1КонтекстноеМеню" id="170"/>
+									<ExtendedTooltip name="Поле1РасширеннаяПодсказка" id="171"/>
+								</CheckBoxField>
+								<Button name="Заполнить" id="35">
+									<Type>UsualButton</Type>
+									<Width>16</Width>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<CommandName>Form.Command.Заполнить</CommandName>
+									<ExtendedTooltip name="ЗаполнитьРасширеннаяПодсказка" id="36"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа2" id="96">
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="97"/>
+				</UsualGroup>
+				<UsualGroup name="Группа3" id="139">
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="140"/>
+					<ChildItems>
+						<Table name="ДокументыДвиж" id="141">
+							<Representation>Tree</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<InitialTreeView>ExpandAllLevels</InitialTreeView>
+							<VerticalStretch>false</VerticalStretch>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ДокументыДвиж</DataPath>
+							<GroupVerticalAlign>Top</GroupVerticalAlign>
+							<ContextMenu name="ДокументыДвижКонтекстноеМеню" id="142"/>
+							<AutoCommandBar name="ДокументыДвижКоманднаяПанель" id="143">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ДокументыДвижРасширеннаяПодсказка" id="144"/>
+							<SearchStringAddition name="ДокументыДвижСтрокаПоиска" id="145">
+								<AdditionSource>
+									<Item>ДокументыДвиж</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДокументыДвижСтрокаПоискаКонтекстноеМеню" id="146"/>
+								<ExtendedTooltip name="ДокументыДвижСтрокаПоискаРасширеннаяПодсказка" id="147"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДокументыДвижСостояниеПросмотра" id="148">
+								<AdditionSource>
+									<Item>ДокументыДвиж</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДокументыДвижСостояниеПросмотраКонтекстноеМеню" id="149"/>
+								<ExtendedTooltip name="ДокументыДвижСостояниеПросмотраРасширеннаяПодсказка" id="150"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДокументыДвижУправлениеПоиском" id="151">
+								<AdditionSource>
+									<Item>ДокументыДвиж</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДокументыДвижУправлениеПоискомКонтекстноеМеню" id="152"/>
+								<ExtendedTooltip name="ДокументыДвижУправлениеПоискомРасширеннаяПодсказка" id="153"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateCell">ДокументыДвижПриАктивизацииЯчейки</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="Документ" id="154">
+									<DataPath>ДокументыДвиж.Документ</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДокументКонтекстноеМеню" id="155"/>
+									<ExtendedTooltip name="ДокументРасширеннаяПодсказка" id="156"/>
+								</InputField>
+								<InputField name="ВремяФакт" id="174">
+									<DataPath>ДокументыДвиж.ВремяФакт</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВремяФактКонтекстноеМеню" id="175"/>
+									<ExtendedTooltip name="ВремяФактРасширеннаяПодсказка" id="176"/>
+								</InputField>
+								<InputField name="ВремяКОплате" id="177">
+									<DataPath>ДокументыДвиж.ВремяКОплате</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ВремяКОплатеКонтекстноеМеню" id="178"/>
+									<ExtendedTooltip name="ВремяКОплатеРасширеннаяПодсказка" id="179"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ДеревоТаб" id="49">
+			<Representation>Tree</Representation>
+			<Footer>true</Footer>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Дерево</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>CancelSearch</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>Find</ExcludedCommand>
+				<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+				<ExcludedCommand>HierarchicalList</ExcludedCommand>
+				<ExcludedCommand>List</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>OutputList</ExcludedCommand>
+				<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+				<ExcludedCommand>SearchHistory</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+				<ExcludedCommand>Tree</ExcludedCommand>
+			</CommandSet>
+			<ContextMenu name="ДеревоТабКонтекстноеМеню" id="50"/>
+			<AutoCommandBar name="ДеревоТабКоманднаяПанель" id="51"/>
+			<ExtendedTooltip name="ДеревоТабРасширеннаяПодсказка" id="52"/>
+			<SearchStringAddition name="ДеревоТабСтрокаПоиска" id="53">
+				<AdditionSource>
+					<Item>ДеревоТаб</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоТабСтрокаПоискаКонтекстноеМеню" id="54"/>
+				<ExtendedTooltip name="ДеревоТабСтрокаПоискаРасширеннаяПодсказка" id="55"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДеревоТабСостояниеПросмотра" id="56">
+				<AdditionSource>
+					<Item>ДеревоТаб</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоТабСостояниеПросмотраКонтекстноеМеню" id="57"/>
+				<ExtendedTooltip name="ДеревоТабСостояниеПросмотраРасширеннаяПодсказка" id="58"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДеревоТабУправлениеПоиском" id="59">
+				<AdditionSource>
+					<Item>ДеревоТаб</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоТабУправлениеПоискомКонтекстноеМеню" id="60"/>
+				<ExtendedTooltip name="ДеревоТабУправлениеПоискомРасширеннаяПодсказка" id="61"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnActivateRow">ДеревоТабПриАктивизацииСтроки</Event>
+			</Events>
+			<ChildItems>
+				<CheckBoxField name="Выбор" id="65">
+					<DataPath>Дерево.Выбор</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыборКонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="ВыборРасширеннаяПодсказка" id="67"/>
+				</CheckBoxField>
+				<InputField name="Клиент" id="62">
+					<DataPath>Дерево.Клиент</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КлиентКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="КлиентРасширеннаяПодсказка" id="64"/>
+				</InputField>
+				<InputField name="ВремяКВыставлению" id="87">
+					<DataPath>Дерево.ВремяКВыставлению</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВремяКВыставлениюКонтекстноеМеню" id="88"/>
+					<ExtendedTooltip name="ВремяКВыставлениюРасширеннаяПодсказка" id="89"/>
+				</InputField>
+				<InputField name="НезакрытыеЧасы" id="112">
+					<DataPath>Дерево.НезакрытоЧасов</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НезакрытыеЧасыКонтекстноеМеню" id="113"/>
+					<ExtendedTooltip name="НезакрытыеЧасыРасширеннаяПодсказка" id="114"/>
+				</InputField>
+				<InputField name="ЗакрытоПозже" id="109">
+					<DataPath>Дерево.ЗакрытоПозже</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЗакрытоПозжеКонтекстноеМеню" id="110"/>
+					<ExtendedTooltip name="ЗакрытоПозжеРасширеннаяПодсказка" id="111"/>
+				</InputField>
+				<InputField name="ФактическоеВремяПриход" id="121">
+					<DataPath>Дерево.ФактическоеВремяПриход</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отработано</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<BackColor>style:FormBackColor</BackColor>
+					<ContextMenu name="ФактическоеВремяПриходКонтекстноеМеню" id="122"/>
+					<ExtendedTooltip name="ФактическоеВремяПриходРасширеннаяПодсказка" id="123"/>
+				</InputField>
+				<InputField name="Ответственный" id="90">
+					<DataPath>Дерево.Руководитель</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОтветственныйКонтекстноеМеню" id="91"/>
+					<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="92"/>
+				</InputField>
+				<InputField name="СсылкиНаДокументы" id="163">
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СсылкиНаДокументыКонтекстноеМеню" id="164"/>
+					<ExtendedTooltip name="СсылкиНаДокументыРасширеннаяПодсказка" id="165"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<Button name="ОтчетКлиенту" id="85">
+			<Type>UsualButton</Type>
+			<Height>2</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<CommandName>Form.Command.ОтчетКлиенту</CommandName>
+			<ExtendedTooltip name="ОтчетКлиентуРасширеннаяПодсказка" id="86"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РС_ВыставлениеСчетовКлиентам</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>1/0:0e861bdc-7002-49fc-b183-c07555bf11bb/-2</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="Дерево" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Клиент" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Клиент</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+						<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+						<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+						<v8:Type>cfg:CatalogRef.КонтактныеЛица</v8:Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+						<v8:Type>cfg:CatalogRef.Подразделения</v8:Type>
+						<v8:Type>cfg:DocumentRef.Задание</v8:Type>
+						<v8:Type>v8:Null</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Выбор" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Проект" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проект</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Задача" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Задача</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.Задание</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ФактическоеВремяНачальныйОстаток" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>НО Фактическое время </v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВремяКлиентаНачальныйОстаток" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>НО Время клиента </v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВремяКВыставлению" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время к выставлению</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Руководитель" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Руководитель</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЗакрытоПозже" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Закрыто позже</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="НезакрытоЧасов" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Незакрыто часов</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаВыполнения" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата выполнения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ФактическоеВремяПриход" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фактическое время приход</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВремяКлиентаПриход" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время клиента приход</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ФактическоеВремяРасход" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фактическое время расход</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВремяКлиентаРасход" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время клиента расход</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СсылкиНаДокументы" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылки на документы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:ValueListType</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Клиент" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Клиент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИтогПоФактическомВремени" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог по фактическом времени</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИтогПоВремениКиента" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог по времени киента</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИтогПоВремениКВыставлению" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итог по времени к выставлению</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Ответственный" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответственный</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Период" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДокументыДвиж" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы движ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Документ" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+						<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+						<v8:Type>cfg:DocumentRef.РС_ОтчетКлиенту</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВремяФакт" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время факт.</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВремяКОплате" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время к оплате</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Руководитель" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Руководитель</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НеВыводитьЗакрытые" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не выводить закрытые</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТабличнаяЧасть1Клиент</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ТабличнаяЧасть1ФактическоеВремя</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ТабличнаяЧасть1ВремяКлиента</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ТабличнаяЧасть1.ФактическоеВремя</dcsset:left>
+						<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:Field">Объект.ТабличнаяЧасть1.ВремяКлиента</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#AA816B</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="Заполнить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Заполнить</Action>
+		</Command>
+		<Command name="ОтчетКлиенту" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет клиенту</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет клиенту</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтчетКлиенту</Action>
+		</Command>
+		<Command name="ТекущаяДатаФормирования" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущая дата</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущая дата формирования</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ТекущаяДатаФормирования</Action>
+		</Command>
+	</Commands>
+</Form>

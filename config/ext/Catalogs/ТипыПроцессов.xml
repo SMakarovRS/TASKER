@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Catalog uuid="a0da2d82-53e6-4afd-aea8-7060248a2d50">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ТипыПроцессов" category="Object">
+				<xr:TypeId>527b11b3-61ed-4952-88a3-bdca5972fcb7</xr:TypeId>
+				<xr:ValueId>d4c1dcbb-a4f0-4678-907a-eb9f515e8737</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ТипыПроцессов" category="Ref">
+				<xr:TypeId>a79d0f20-35f1-4a53-8ad2-e9cbaa4e08e9</xr:TypeId>
+				<xr:ValueId>b547f188-a8be-455a-8f5b-3045550600f4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ТипыПроцессов" category="Selection">
+				<xr:TypeId>f4e96f0c-41db-45fa-b69d-f42a16a5dd89</xr:TypeId>
+				<xr:ValueId>db18169a-9b42-4c6d-bdd1-529b8ac685e2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ТипыПроцессов" category="List">
+				<xr:TypeId>a26e428f-d1c2-4edd-9f07-f148988a6c4b</xr:TypeId>
+				<xr:ValueId>320d889a-f195-4e57-aa35-756cc304d490</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ТипыПроцессов" category="Manager">
+				<xr:TypeId>ec69f228-add4-46a5-9326-8c5538d56f74</xr:TypeId>
+				<xr:ValueId>f1a012ac-ced5-4084-842a-e8ee7949c487</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ТипыПроцессов</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>7d0089c4-b31f-4c8e-a13f-7e0b003025a4</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

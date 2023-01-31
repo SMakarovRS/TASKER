@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Document uuid="0835f5a8-d5db-4cf3-b4b9-6b97d1cf0f0c">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ТелефонныйЗвонок" category="Object">
+				<xr:TypeId>3021e982-8e9d-4581-94ff-d675dc99912a</xr:TypeId>
+				<xr:ValueId>2ec217ed-79cd-4efc-b970-bdedd05235cd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ТелефонныйЗвонок" category="Ref">
+				<xr:TypeId>b2eab2bb-0a8d-469d-bf1e-1382725a55db</xr:TypeId>
+				<xr:ValueId>c9213a79-3977-4cbb-9be4-87a21d3b0dd4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ТелефонныйЗвонок" category="Selection">
+				<xr:TypeId>788c4ded-e864-490b-b7f2-312eac55842c</xr:TypeId>
+				<xr:ValueId>6b82ed1e-e278-4aad-b583-3496fead5e16</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ТелефонныйЗвонок" category="List">
+				<xr:TypeId>c0bf448a-d385-4f58-b1f1-f874ecc0a229</xr:TypeId>
+				<xr:ValueId>5385f3af-e908-46bf-9d14-9cbb482b3bb3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ТелефонныйЗвонок" category="Manager">
+				<xr:TypeId>164056e5-bde2-43e6-90dc-f946c453e618</xr:TypeId>
+				<xr:ValueId>f06c2fd0-8149-4a66-a039-6f24cc1ac39b</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ТелефонныйЗвонок</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>457578ab-dfe2-4419-8d8a-64283b341f42</ExtendedConfigurationObject>
+			<NumberType>String</NumberType>
+			<NumberLength>11</NumberLength>
+			<NumberAllowedLength>Fixed</NumberAllowedLength>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="b622c82b-48ef-438d-8bc2-d05b742f9550">
+				<InternalInfo/>
+				<Properties>
+					<Name>АбонентКакСвязаться</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>67ef6671-f537-46bf-88e6-f5bcf34a17a4</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="261da2b7-a00e-49e8-9e4d-c2a11daacfc3">
+				<InternalInfo/>
+				<Properties>
+					<Name>АбонентКонтакт</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>de778ca7-feaf-4531-80ae-11a534c56928</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.КонтактВзаимодействия</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="053e571e-7fb3-451c-a97c-b3aec9b1889e">
+				<InternalInfo/>
+				<Properties>
+					<Name>АбонентПредставление</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>0dfbe7a9-9c2e-4cbd-ac53-3b547fd73e91</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>1024</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="10577d91-6af4-4b8b-960f-cdccb459e8e3">
+				<InternalInfo/>
+				<Properties>
+					<Name>Автор</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>0a76a84d-e883-477e-8b87-7bf984cdc1cf</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="5bd83183-a1c1-40c4-8db1-0180723cf189">
+				<InternalInfo/>
+				<Properties>
+					<Name>Важность</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>2b6c4184-6d7d-48e5-bd4e-ad31e63398d6</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.ВариантыВажностиВзаимодействия</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="6b75f9a9-a9c1-424f-bbe9-79055e73ece3">
+				<InternalInfo/>
+				<Properties>
+					<Name>ВзаимодействиеОснование</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>c7b883dc-6c26-4eb5-bc19-7919ad57da27</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="d81c5d31-b570-414e-b5f0-6839a191e173">
+				<InternalInfo/>
+				<Properties>
+					<Name>Входящий</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>86df8648-e195-4661-99ee-6052788eb276</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="9f2befc7-e0d5-4c4e-a50a-1a8071456e98">
+				<InternalInfo/>
+				<Properties>
+					<Name>Комментарий</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>6410853e-a17e-44db-b8cc-bfefd7c4d239</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="0445f775-3d41-4dc7-bc75-dd236e714992">
+				<InternalInfo/>
+				<Properties>
+					<Name>Описание</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>a22cf6e9-1157-4be5-8d30-aa9bbf2b5e6e</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="e248ddf6-450f-451c-9a16-50781a3b5069">
+				<InternalInfo/>
+				<Properties>
+					<Name>Ответственный</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>35133725-9647-42dc-a76a-2e62b2918ac4</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="5e2d3651-2905-4bef-adc3-c948f1d1f9b4">
+				<InternalInfo/>
+				<Properties>
+					<Name>Тема</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>7fc37008-c378-4a70-a9a9-07543c7248a6</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>1024</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="e1bf64f9-87d8-4831-ad90-2a88aac0f7a1">
+				<InternalInfo/>
+				<Properties>
+					<Name>РС_UUID</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>c9febf1f-2471-4b98-ba18-5847b9abfe13</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="af6d7c3b-c12a-4e53-bd27-6e79d06530d9">
+				<InternalInfo/>
+				<Properties>
+					<Name>РС_ВнутреннийНомер</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>9dafb2a8-332a-4ec6-bc16-e94baf29c3fd</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>15</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="12bbe4ac-0ea4-476d-9c72-6d0558b88b3c">
+				<InternalInfo/>
+				<Properties>
+					<Name>РС_ИдентификаторПользователяАТС</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>d2d11a5a-d2eb-4f13-942b-df6687e50f39</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Form>ФормаДокумента</Form>
+			<Form>ФормаСписка</Form>
+			<Form>ФормаВыбора</Form>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

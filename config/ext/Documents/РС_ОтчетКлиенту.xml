@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Document uuid="e8d62e88-3165-440d-96a2-62d0cba92694">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.РС_ОтчетКлиенту" category="Object">
+				<xr:TypeId>3e2e4f87-ba70-4abe-aadf-7163776be7d6</xr:TypeId>
+				<xr:ValueId>765587b2-2950-48e4-a269-f7a31414dd1e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.РС_ОтчетКлиенту" category="Ref">
+				<xr:TypeId>c04b5639-f28d-433e-996a-f054318fa999</xr:TypeId>
+				<xr:ValueId>8745fa48-393e-4a67-95c9-01c73b015e4a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.РС_ОтчетКлиенту" category="Selection">
+				<xr:TypeId>460ee38f-001a-4ea7-a559-bc5a1f4d3c13</xr:TypeId>
+				<xr:ValueId>83a54c8e-b6ed-469c-b475-4da5360e4052</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.РС_ОтчетКлиенту" category="List">
+				<xr:TypeId>a08e3c80-38be-4fbf-bdd4-c72c52b2c1a1</xr:TypeId>
+				<xr:ValueId>32314426-a0f9-460d-8f99-bc73ff87e0cc</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.РС_ОтчетКлиенту" category="Manager">
+				<xr:TypeId>6f2a7e0b-4fb4-463d-b2c6-57cda44a43e6</xr:TypeId>
+				<xr:ValueId>5d5d95c8-0527-40d9-b6bc-c6ffb4c98ed9</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>РС_ОтчетКлиенту</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>8f4dc55a-5e3d-466c-96f8-294afae6edad</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаДокумента</Form>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

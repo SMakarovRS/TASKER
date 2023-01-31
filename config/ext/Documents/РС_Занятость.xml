@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Document uuid="63288a04-2bdc-4901-8bb9-68b7d295fabd">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.РС_Занятость" category="Object">
+				<xr:TypeId>438292d0-686e-42b6-b8f1-8b6ebccff7b9</xr:TypeId>
+				<xr:ValueId>db35f556-9e0a-46bd-ab74-0e2169c1a5a9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.РС_Занятость" category="Ref">
+				<xr:TypeId>678a9e4e-a6b5-45ae-83f6-ec0640a3293c</xr:TypeId>
+				<xr:ValueId>f9cd95b3-a5d1-44e7-94d8-240a791dd4a9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.РС_Занятость" category="Selection">
+				<xr:TypeId>248662a0-30d4-4e1a-b2e8-febf54759819</xr:TypeId>
+				<xr:ValueId>c4c635cd-18f0-404f-8c74-0707c7f7bd81</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.РС_Занятость" category="List">
+				<xr:TypeId>f0a504e5-d877-4cb9-8eab-b2698a5e7be2</xr:TypeId>
+				<xr:ValueId>6dbfe165-73f8-4ef8-a1ce-451a1494b62f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.РС_Занятость" category="Manager">
+				<xr:TypeId>45f23c90-f343-471e-a9cb-bd5f02e5ce87</xr:TypeId>
+				<xr:ValueId>36b90b27-223f-489a-9e04-00a0744064a4</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>РС_Занятость</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>980d8462-99b8-42b0-a397-0e7b4a84bba3</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="b565d994-f986-4b07-b634-95b615133434">
+				<InternalInfo/>
+				<Properties>
+					<Name>Задание</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>0614d53a-2f5b-4590-8577-bd27a794a1bf</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:DocumentRef.Задание</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="8bdd4311-44a1-4ee3-b655-96e012ab86cf">
+				<InternalInfo/>
+				<Properties>
+					<Name>Исполнитель</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>25adec44-31b8-4dae-b3bd-2a68aa876f27</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.Пользователь</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="7f9862b8-aa3f-415a-b099-6d5ba6c76c05">
+				<InternalInfo/>
+				<Properties>
+					<Name>ДатаНачала</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>43cda32f-cca4-45a0-b469-58206bdbcdbd</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="bbb1796f-c163-4338-b6fd-cfdb7bf5578a">
+				<InternalInfo/>
+				<Properties>
+					<Name>ДатаОкончания</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>858aa156-5603-4010-bd2b-4faf73a2b3ac</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="b9902603-5cf7-47b1-8ad3-ab68e8c2dae3">
+				<InternalInfo/>
+				<Properties>
+					<Name>Описание</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>18b9c919-a43d-4440-870d-1e9dabdd5005</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="e2bca20c-fe15-4d64-90c3-e2ce6a4489df">
+				<InternalInfo/>
+				<Properties>
+					<Name>ФорматированноеОписание</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>bad6ba89-bdef-4180-83b0-1058cf8afc23</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>v8:ValueStorage</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Form>ФормаДокументаБыстраяЗанятость</Form>
+			<Form>ФормаБыстрыйВводНаОсновании</Form>
+			<Template>СКД_ПравилаОтбораСобытий</Template>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>
