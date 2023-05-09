@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema">
+		<dataSource>
+			<name>ИсточникДанных1</name>
+			<dataSourceType>Local</dataSourceType>
+		</dataSource>
+		<dataSet xsi:type="DataSetQuery">
+			<name>НаборДанных1</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Задание</dataPath>
+				<field>Задание</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Задание</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Клиент</dataPath>
+				<field>Клиент</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Клиент</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Проект</dataPath>
+				<field>Проект</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Проект</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ФактическаяТрудоемкость</dataPath>
+				<field>ФактическаяТрудоемкость</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПлановаяДлительность</dataPath>
+				<field>ПлановаяДлительность</field>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Пользователь</dataPath>
+				<field>Пользователь</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Пользователь</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Соотношение</dataPath>
+				<field>Соотношение</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Соотношение</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ФактическаяТрудоемкостьОбщая</dataPath>
+				<field>ФактическаяТрудоемкостьОбщая</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Фактическая трудоемкость общая</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+				<inputParameters/>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	Контрагенты.Ссылка КАК Клиент,
+	Проекты.Ссылка КАК Проект,
+	ТБЗадание.Ссылка КАК Задание,
+	СУММА(ВЫРАЗИТЬ(РС_Занятость.ФактическаяТрудоемкость КАК ЧИСЛО(15, 2))) КАК ФактическаяТрудоемкость,
+	ВЫРАЗИТЬ(ТБЗадание.ПлановаяДлительность КАК ЧИСЛО(15, 2)) КАК ПлановаяДлительность,
+	РС_Занятость.Исполнитель КАК Сотрудник
+ПОМЕСТИТЬ информацияПоЗатратам
+ИЗ
+	Справочник.Проекты КАК Проекты
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Контрагенты КАК Контрагенты
+		ПО Проекты.Клиент = Контрагенты.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.Задание КАК ТБЗадание
+			ЛЕВОЕ СОЕДИНЕНИЕ Документ.РС_Занятость КАК РС_Занятость
+			ПО ТБЗадание.Ссылка = РС_Занятость.Задание
+		ПО (ТБЗадание.Проект = Проекты.Ссылка)
+ГДЕ
+	РС_Занятость.ПометкаУдаления = &amp;Ложь
+
+СГРУППИРОВАТЬ ПО
+	Контрагенты.Ссылка,
+	Проекты.Ссылка,
+	ТБЗадание.Ссылка,
+	РС_Занятость.Исполнитель,
+	ВЫРАЗИТЬ(ТБЗадание.ПлановаяДлительность КАК ЧИСЛО(15, 2))
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТЗадание.Ссылка КАК Ссылка,
+	ВЫРАЗИТЬ(СУММА(РС_Занятость.ФактическаяТрудоемкость) КАК ЧИСЛО(15, 2)) КАК ФактическаяТрудоемкость
+//	ВЫРАЗИТЬ(РС_Занятость.ФактическаяТрудоемкость КАК ЧИСЛО(15, 2)) КАК ФактическаяТрудоемкость
+
+ПОМЕСТИТЬ ОбщийФактТруд
+ИЗ
+	Документ.Задание КАК ВТЗадание
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.РС_Занятость КАК РС_Занятость
+		ПО (РС_Занятость.Задание = ВТЗадание.Ссылка)
+
+СГРУППИРОВАТЬ ПО
+	ВТЗадание.Ссылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВЫБОР
+		КОГДА Пользователи.Ссылка ЕСТЬ NULL
+			ТОГДА "НЕ НАЗНАЧЕН"
+		ИНАЧЕ Пользователи.Ссылка
+	КОНЕЦ КАК Пользователь,
+	информацияПоЗатратам.Клиент КАК Клиент,
+	информацияПоЗатратам.Проект КАК Проект,
+	информацияПоЗатратам.Задание КАК Задание,
+	информацияПоЗатратам.ФактическаяТрудоемкость КАК ФактическаяТрудоемкость,
+	информацияПоЗатратам.ПлановаяДлительность КАК ПлановаяДлительность,
+	ВЫБОР
+		КОГДА НЕ информацияПоЗатратам.ФактическаяТрудоемкость ЕСТЬ NULL
+				И информацияПоЗатратам.ФактическаяТрудоемкость &lt;&gt; 0
+			ТОГДА ВЫРАЗИТЬ(информацияПоЗатратам.ПлановаяДлительность / информацияПоЗатратам.ФактическаяТрудоемкость КАК ЧИСЛО(15, 2))
+	КОНЕЦ КАК Соотношение,
+	ОбщийФактТруд.ФактическаяТрудоемкость КАК ФактическаяТрудоемкостьОбщая
+ИЗ
+	информацияПоЗатратам КАК информацияПоЗатратам
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Пользователи КАК Пользователи
+		ПО (Пользователи.Ссылка = информацияПоЗатратам.Сотрудник)
+		ЛЕВОЕ СОЕДИНЕНИЕ ОбщийФактТруд КАК ОбщийФактТруд
+		ПО информацияПоЗатратам.Задание = ОбщийФактТруд.Ссылка
+ГДЕ
+	Пользователи.ПометкаУдаления = &amp;Ложь</query>
+		</dataSet>
+		<parameter>
+			<name>Ложь</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Ложь</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:boolean</Type>
+			</valueType>
+			<value xsi:type="xs:boolean">false</value>
+			<useRestriction>true</useRestriction>
+		</parameter>
+		<settingsVariant>
+			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">Основной</name>
+			<presentation xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="xs:string">Основной</presentation>
+		</settingsVariant>
+		<settingsVariant>
+			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">Вариант1</name>
+			<presentation xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Вариант1</d4p1:content>
+				</d4p1:item>
+			</presentation>
+		</settingsVariant>
+	</dataCompositionSchema>
+</SchemaFile>﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<selection>
+		<item xsi:type="SelectedItemField">
+			<field>Пользователь</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Клиент</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Проект</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Задание</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ПлановаяДлительность</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ФактическаяТрудоемкость</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Соотношение</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ФактическаяТрудоемкостьОбщая</field>
+		</item>
+	</selection>
+	<dataParameters/>
+	<outputParameters/>
+	<item xsi:type="StructureItemGroup">
+		<groupItems>
+			<item xsi:type="GroupItemField">
+				<field>Пользователь</field>
+				<groupType>Items</groupType>
+				<periodAdditionType>None</periodAdditionType>
+				<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+				<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+			</item>
+		</groupItems>
+		<order>
+			<item xsi:type="OrderItemAuto"/>
+		</order>
+		<selection>
+			<item xsi:type="SelectedItemAuto"/>
+		</selection>
+		<outputParameters/>
+		<item xsi:type="StructureItemGroup">
+			<order>
+				<item xsi:type="OrderItemAuto"/>
+			</order>
+			<selection>
+				<item xsi:type="SelectedItemAuto"/>
+			</selection>
+			<outputParameters/>
+		</item>
+	</item>
+</Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<selection>
+		<item xsi:type="SelectedItemField">
+			<field>Пользователь</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Клиент</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Проект</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Задание</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ФактическаяТрудоемкость</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ПлановаяДлительность</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Соотношение</field>
+		</item>
+	</selection>
+	<outputParameters/>
+	<item xsi:type="StructureItemGroup">
+		<order>
+			<item xsi:type="OrderItemAuto"/>
+		</order>
+		<selection>
+			<item xsi:type="SelectedItemAuto"/>
+		</selection>
+		<outputParameters/>
+	</item>
+</Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema"/>
+</SchemaFile>

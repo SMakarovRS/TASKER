@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema">
+		<dataSource>
+			<name>ИсточникДанных1</name>
+			<dataSourceType>Local</dataSourceType>
+		</dataSource>
+		<dataSet xsi:type="DataSetQuery">
+			<name>НаборДанных1</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Задача</dataPath>
+				<field>Задача</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Задача</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Проект</dataPath>
+				<field>Проект</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Проект</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Занятость</dataPath>
+				<field>Занятость</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Занятость</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПлановоеВремя</dataPath>
+				<field>ПлановоеВремя</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Плановое время</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ФактическоеВремя</dataPath>
+				<field>ФактическоеВремя</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Фактическое время</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance/>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	Проекты.Ссылка КАК Проект,
+	ДокументЗадание.Ссылка КАК Задача,
+	ДокументЗадание.ПлановаяДлительность КАК ПлановоеВремя,
+	РС_Занятость.Ссылка КАК Занятость
+ПОМЕСТИТЬ ВТ_Основное
+ИЗ
+	Справочник.Проекты КАК Проекты
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.Задание КАК ДокументЗадание
+			ЛЕВОЕ СОЕДИНЕНИЕ Документ.РС_Занятость КАК РС_Занятость
+			ПО ДокументЗадание.Ссылка = РС_Занятость.Задание
+		ПО Проекты.Ссылка = ДокументЗадание.Проект
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ОСНОВНОЕ.Проект КАК Проект,
+	ВТ_ОСНОВНОЕ.Задача КАК Задача,
+	ВТ_ОСНОВНОЕ.Занятость КАК Занятость,
+	ВТ_ОСНОВНОЕ.ПлановоеВремя КАК ПлановоеВремя,
+	СУММА(РС_Работы.ФактическоеВремя) КАК ФактическоеВремя
+ИЗ
+	ВТ_Основное КАК ВТ_ОСНОВНОЕ
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.РС_Работы КАК РС_Работы
+		ПО ВТ_ОСНОВНОЕ.Занятость = РС_Работы.Занятость
+ГДЕ
+	РС_Работы.ВидДвижения = ЗНАЧЕНИЕ(ВидДвиженияНакопления.Приход)
+
+СГРУППИРОВАТЬ ПО
+	ВТ_ОСНОВНОЕ.ПлановоеВремя,
+	ВТ_ОСНОВНОЕ.Проект,
+	ВТ_ОСНОВНОЕ.Задача,
+	ВТ_ОСНОВНОЕ.Занятость</query>
+		</dataSet>
+		<calculatedField>
+			<dataPath>ПроцентВыполнения</dataPath>
+			<expression>ВЫБОР КОГДА ФактическоеВремя &lt;&gt; 0 ТОГДА (ПлановоеВремя / ФактическоеВремя) * 100 ИНАЧЕ 0 КОНЕЦ</expression>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Процент выполнения</d4p1:content>
+				</d4p1:item>
+			</title>
+			<appearance>
+				<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+					<parameter>Формат</parameter>
+					<value xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>ЧДЦ=1</d6p1:content>
+						</d6p1:item>
+					</value>
+				</item>
+			</appearance>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+				<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<Digits>0</Digits>
+					<FractionDigits>0</FractionDigits>
+					<AllowedSign>Any</AllowedSign>
+				</NumberQualifiers>
+			</valueType>
+		</calculatedField>
+		<totalField>
+			<dataPath>ПлановоеВремя</dataPath>
+			<expression>Сумма(ВычислитьВыражениеСГруппировкойМассив("Максимум(ПлановоеВремя)", "Проект, Задача"))</expression>
+		</totalField>
+		<totalField>
+			<dataPath>ФактическоеВремя</dataPath>
+			<expression>Сумма(ФактическоеВремя)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>ПроцентВыполнения</dataPath>
+			<expression>Сумма(ПроцентВыполнения)</expression>
+			<group>Занятость</group>
+		</totalField>
+		<totalField>
+			<dataPath>ПроцентВыполнения</dataPath>
+			<expression>Сумма(ВычислитьВыражениеСГруппировкойМассив("Максимум(ПлановоеВремя)", "Проект, Задача"))/Сумма(ФактическоеВремя)*100</expression>
+			<group>Задача</group>
+			<group>Проект</group>
+			<group>ОбщийИтог</group>
+		</totalField>
+		<settingsVariant>
+			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">Основной</name>
+			<presentation xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="xs:string">Основной</presentation>
+		</settingsVariant>
+	</dataCompositionSchema>
+</SchemaFile>﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<selection>
+		<item xsi:type="SelectedItemField">
+			<field>ПлановоеВремя</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ФактическоеВремя</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ПроцентВыполнения</field>
+		</item>
+		<viewMode>Normal</viewMode>
+		<userSettingID>10b6380a-2fec-4279-91a1-3074e0c47960</userSettingID>
+	</selection>
+	<filter>
+		<viewMode>Normal</viewMode>
+		<userSettingID>68ea527b-2fcc-4150-a641-e377279d2a6d</userSettingID>
+	</filter>
+	<order>
+		<item xsi:type="OrderItemField">
+			<field>Проект</field>
+			<orderType>Asc</orderType>
+		</item>
+		<item xsi:type="OrderItemField">
+			<field>Задача</field>
+			<orderType>Asc</orderType>
+		</item>
+		<viewMode>Normal</viewMode>
+		<userSettingID>2b74b3a9-1e2c-49e3-b76b-696e16590c98</userSettingID>
+	</order>
+	<conditionalAppearance>
+		<viewMode>Normal</viewMode>
+		<userSettingID>58edc55c-67ae-4491-938c-122a11a9572e</userSettingID>
+	</conditionalAppearance>
+	<outputParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+			<dcscor:value xsi:type="DataCompositionTextOutputType">DontOutput</dcscor:value>
+		</dcscor:item>
+	</outputParameters>
+	<item xsi:type="StructureItemTable">
+		<row>
+			<groupItems>
+				<item xsi:type="GroupItemField">
+					<field>Проект</field>
+					<groupType>Items</groupType>
+					<periodAdditionType>None</periodAdditionType>
+					<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+					<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+				</item>
+			</groupItems>
+			<order>
+				<item xsi:type="OrderItemAuto"/>
+			</order>
+			<selection>
+				<item xsi:type="SelectedItemAuto"/>
+			</selection>
+			<outputParameters/>
+			<item>
+				<groupItems>
+					<item xsi:type="GroupItemField">
+						<field>Задача</field>
+						<groupType>Items</groupType>
+						<periodAdditionType>None</periodAdditionType>
+						<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+						<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+					</item>
+				</groupItems>
+				<order>
+					<item xsi:type="OrderItemAuto"/>
+				</order>
+				<selection>
+					<item xsi:type="SelectedItemAuto"/>
+				</selection>
+				<outputParameters/>
+				<item>
+					<groupItems>
+						<item xsi:type="GroupItemField">
+							<field>Занятость</field>
+							<groupType>Items</groupType>
+							<periodAdditionType>None</periodAdditionType>
+							<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+							<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+						</item>
+					</groupItems>
+					<order>
+						<item xsi:type="OrderItemAuto"/>
+					</order>
+					<selection>
+						<item xsi:type="SelectedItemAuto"/>
+					</selection>
+					<outputParameters/>
+				</item>
+			</item>
+		</row>
+		<selection>
+			<item xsi:type="SelectedItemAuto"/>
+		</selection>
+		<outputParameters/>
+	</item>
+	<itemsViewMode>Normal</itemsViewMode>
+	<itemsUserSettingID>160d9314-cf31-491e-9647-e98a097201e8</itemsUserSettingID>
+</Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema"/>
+</SchemaFile>
